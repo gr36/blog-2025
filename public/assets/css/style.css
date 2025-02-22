@@ -135,6 +135,13 @@ background-clip: padding-box;
     font-size: var(--step-4);
 }
 
+.gallery img {
+    display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+}
+
 
 @media only screen and (max-width: 1000px) {
     body {

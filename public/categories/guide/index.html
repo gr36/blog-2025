@@ -88,9 +88,16 @@
 <div class="header flow">
     <svg role="img" aria-label="Greg Morris" viewBox="0 0 420.84 64.11" xmlns="http://www.w3.org/2000/svg">
     <defs>
-    <style>.cls-1 {
+    <style>
+        .cls-1 {
             fill: #231f20;
-        }</style>
+        }
+        @media (prefers-color-scheme: dark) {
+            .cls-1 {
+                fill: white;
+            }
+        }
+    </style>
     </defs>
     <g data-name="Layer 1">
     <path class="cls-1" d="M0,27.45v-.14C0,13.01,11.14,1.3,26.37,1.3c8.99,0,14.59,2.44,19.76,6.9l-6.97,8.41c-3.81-3.23-7.4-5.1-13.15-5.1-8.05,0-14.44,7.12-14.44,15.67v.14c0,9.2,6.33,15.95,15.24,15.95,4.1,0,7.62-1.01,10.42-3.02v-7.19h-11.14v-9.56h21.85v21.85c-5.17,4.39-12.29,7.98-21.49,7.98C10.78,53.33,0,42.4,0,27.45Z"/>
@@ -154,28 +161,13 @@
 	
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2024/05/08/exporting-highlights-from.html">
-    <h1 class="p-name">Exporting Highlights From A Kobo E-Reader</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2024-05-08 08:25:24 &#43;0000">08 May 2024</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2024/05/08/exporting-highlights-from.html"><h1 class="p-name">Exporting Highlights From A Kobo E-Reader</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>After <a href="https://gregmorris.co.uk/2024/04/25/i-managed-to.html">loosing my Kindle Paperwhite in London</a> a couple of weeks ago I have been a bit lost. I did order another one, but when <a href="https://thedent.net/post/the-kobo-libra-colour">posts started</a> <a href="https://maique.eu/2024/05/01/the-kobo-review.html">popping up</a> about a <a href="https://amzn.to/4abDTh0">colour Kobo Libra</a> I decided to return it and try something new. Granted I have only had it since Friday, but I am already in love with it.</p>
+  <section class="e-content post-body">
+      <p>After <a href="https://gregmorris.co.uk/2024/04/25/i-managed-to.html">loosing my Kindle Paperwhite in London</a> a couple of weeks ago I have been a bit lost. I did order another one, but when <a href="https://thedent.net/post/the-kobo-libra-colour">posts started</a> <a href="https://maique.eu/2024/05/01/the-kobo-review.html">popping up</a> about a <a href="https://amzn.to/4abDTh0">colour Kobo Libra</a> I decided to return it and try something new. Granted I have only had it since Friday, but I am already in love with it.</p>
 <p>I will no doubt write a longer post about it later, but there are not many downsides to this new device. It has a nice screen with colour, has a separately available stylus for note taking and highlighting which I love. However reporting those highlights is not a simple as with Kindle, but I found some ways to make use of them. The below works with the Kobo Libra Colour, Kobo Libra 2 and Kobo Clara Colour - so I don’t see any reason it shouldn’t work with others.</p>
 <h2 id="in-a-text-file">In A Text File</h2>
 <ol>
@@ -214,6 +206,18 @@
 <p>However, this will only work for highlights made to Kobo purchased books. This <strong>will not work</strong> for manually added ePub books or PDFs. There is a solution for this pointed out by Readwise themselves, called <a href="https://utf9k.net/projects/october/">October</a>, that grabs these from a connected device - however I have not tested this out myself so cant speak for its usage.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2024-05-08 08:25:24 &#43;0000"><i class="fa-regular fa-calendar"></i>  08 May 2024</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -221,28 +225,13 @@
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2024/04/15/new-plugin-search.html">
-    <h1 class="p-name">New Plugin: Search Partial</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2024-04-15 07:11:24 &#43;0000">15 Apr 2024</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2024/04/15/new-plugin-search.html"><h1 class="p-name">New Plugin: Search Partial</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>In my work to recreate my 11ty blog on micro.blog I wanted a better search experience for readers, and also myself when searching for posts to link to. Manton did a great job with his <a href="https://github.com/microdotblog/plugin-search-page">search page plugin</a>, so I adapted this to be able to appear on any page.</p>
+  <section class="e-content post-body">
+      <p>In my work to recreate my 11ty blog on micro.blog I wanted a better search experience for readers, and also myself when searching for posts to link to. Manton did a great job with his <a href="https://github.com/microdotblog/plugin-search-page">search page plugin</a>, so I adapted this to be able to appear on any page.</p>
 <p><img src="https://greg-morris.micro.blog/uploads/2024/search-bar.png" alt=""></p>
 <p>This plugin for micro.blog will allow you to add a search bar to any page you wish.</p>
 <h2 id="set-up">Set Up</h2>
@@ -281,6 +270,18 @@
 <p>The basis of this plugin came from Manton <a href="https://github.com/microdotblog/plugin-search-page">search page plugin</a>.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2024-04-15 07:11:24 &#43;0000"><i class="fa-regular fa-calendar"></i>  15 Apr 2024</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -288,28 +289,13 @@
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2023/12/20/how-i-use.html">
-    <h1 class="p-name">How I Use The New Apple Journal App</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2023-12-20 20:00:36 &#43;0000">20 Dec 2023</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2023/12/20/how-i-use.html"><h1 class="p-name">How I Use The New Apple Journal App</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>Finally launching with iOS 17.2 <a href="/2023/10/27/new-journalling-app.html">Apple’s new journal app</a> immediately received criticism. Whilst some of it was valid, most of this focused on features Apple did not promise. It delivered a very barebones app that gives me the impression it was for nothing more than showing off the new <a href="https://developer.apple.com/videos/play/tech-talks/111384/">Journaling API</a>. <em>My</em> thoughts are a lot more positive, and I thought I would run through how I use it.</p>
+  <section class="e-content post-body">
+      <p>Finally launching with iOS 17.2 <a href="/2023/10/27/new-journalling-app.html">Apple’s new journal app</a> immediately received criticism. Whilst some of it was valid, most of this focused on features Apple did not promise. It delivered a very barebones app that gives me the impression it was for nothing more than showing off the new <a href="https://developer.apple.com/videos/play/tech-talks/111384/">Journaling API</a>. <em>My</em> thoughts are a lot more positive, and I thought I would run through how I use it.</p>
 <figure><img src="uploads/2024/c4468f7f07.jpg" alt="" /></figure>
 <p>I have been journalling on and off for a while, but only really got <a href="/2023/01/05/journaling-for-journaling.html">serious in January</a> 2023. Adopting Day One to type out morning pages and other entries pretty religiously. Due to my short relationship to journalling apps, some may claim this restricts the validity of my opinions. I’m not on a <a href="https://dayoneapp.com/blog/streak-story-bryce-evans/">two thousand day streak</a> or anything, but I will leave the level of authority I write with up to you.</p>
 <h2 id="powerfullysimple">Powerfully Simple</h2>
@@ -320,6 +306,18 @@
 <p>The app is not perfect, there’s no Mac or iPad app to start with. You could achieve the same result by simplifying Day One, as it <a href="https://dayoneapp.com/blog/introducing-journaling-suggestions/">also has access to the new Journalling suggestions</a>, found by starting a new post and tapping the magic wand icon. I, personally, don’t need all the extra bits that Day One offers, so I can remove <em>another</em> cost from my subscriptions and still get all the benefits of journalling. If I can <a href="/2023/12/19/the-unremarkable-chronicles.html">work out what to write</a>!</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2023-12-20 20:00:36 &#43;0000"><i class="fa-regular fa-calendar"></i>  20 Dec 2023</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -327,28 +325,13 @@
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2022/10/17/how-i-use.html">
-    <h1 class="p-name">How I Use OMG.lol Statuses</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2022-10-17 09:59:06 &#43;0000">17 Oct 2022</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2022/10/17/how-i-use.html"><h1 class="p-name">How I Use OMG.lol Statuses</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>The fun little service <a href="https://home.omg.lol">omg.lol</a> is the new hotness on micro.blog and seems to be seeping out into the wider internet. Not only is it ridiculously cheap for what you get, the developer Adam seems to be making constant updates and offering more and more value for money. For just £5 per year you get access to a landing page for your social media, mastodon instance, email forwarding and my favourite service — statuslog.</p>
+  <section class="e-content post-body">
+      <p>The fun little service <a href="https://home.omg.lol">omg.lol</a> is the new hotness on micro.blog and seems to be seeping out into the wider internet. Not only is it ridiculously cheap for what you get, the developer Adam seems to be making constant updates and offering more and more value for money. For just £5 per year you get access to a landing page for your social media, mastodon instance, email forwarding and my favourite service — statuslog.</p>
 <p>Statuslog allows you to post small updates containing whatever you wish, along with an emoji. Exactly the type of thing that allows you to share what you are up to without having to interact with a service. As with everything omg.lol creates, it’s brilliantly designed and easy to customise for your use.</p>
 <h2 id="statusonmyblog">Status On My Blog</h2>
 <p>I have embraced the set-up of micro.blog. It promotes using your blog for shorter posts as well as longer ones to keep hold of your content. There are just some posts that I don’t care about, and are what Twitter was really made for. Short, to the point life updates, that have no value — think “drinking coffee” and not tweet storms of information.</p>
@@ -400,6 +383,18 @@ opacity: .5; color: #111 !important;
 <p>If you then wish to then import the status into micro.blog the RSS feed you will need is <code>http://[your-address].status.lol/feed</code> replace your address with yours. If you do not use micro.blog there are automation services such as <a href="https://ifttt.com">IFTTT</a> that can Tweet whenever an RSS feed is updated.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2022-10-17 09:59:06 &#43;0000"><i class="fa-regular fa-calendar"></i>  17 Oct 2022</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -407,28 +402,13 @@ opacity: .5; color: #111 !important;
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2022/04/18/how-to-sign.html">
-    <h1 class="p-name">How To Sign Shortcuts Files</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2022-04-18 14:41:58 &#43;0000">18 Apr 2022</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2022/04/18/how-to-sign.html"><h1 class="p-name">How To Sign Shortcuts Files</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>I woke to an email about an ancient <a href="https://github.com/gr36/Shortcuts">Shortcuts repo</a> I had stored old backup files in. They were available as a place to save Shortcut files I had written about because the iCloud link sharing can be a bit flaky. They were so old it contained loads of .wflow files and I had forgotten it even existed, but they now need to be signed to work with iOS15.</p>
+  <section class="e-content post-body">
+      <p>I woke to an email about an ancient <a href="https://github.com/gr36/Shortcuts">Shortcuts repo</a> I had stored old backup files in. They were available as a place to save Shortcut files I had written about because the iCloud link sharing can be a bit flaky. They were so old it contained loads of .wflow files and I had forgotten it even existed, but they now need to be signed to work with iOS15.</p>
 <p>Of course, I felt no need to update these, but thought it should be pretty simple, so tried to get them updated anyway. Unfortunately, I was wrong and the lack of detail in how to do this is pretty poor, but with a bit of trial and error I got them signed without issue – I hope.</p>
 <h2 id="tools">Tools</h2>
 <p>You will need a Mac to do this. It is the only way I have found to reliably get everything signed using the command line. Some information online suggest that it can be done on iOS using SSH, but I couldn’t get <a href="https://www.reddit.com/r/shortcuts/comments/pich0y/shortcut_source_helper_helper_for_shortcut_plist/">this to work</a>, and it felt very fiddly.</p>
@@ -441,6 +421,18 @@ opacity: .5; color: #111 !important;
 <p>Who knows if Apple will change the requirement yet again, but for the time being, you will now be able to load the file into shortcuts on Mac or iOS without issue, as the new file is now signed.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2022-04-18 14:41:58 &#43;0000"><i class="fa-regular fa-calendar"></i>  18 Apr 2022</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -448,28 +440,13 @@ opacity: .5; color: #111 !important;
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2021/12/06/how-to-use.html">
-    <h1 class="p-name">How To Use Tailwind With Your Ghost Blog</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2021-12-06 13:57:46 &#43;0000">06 Dec 2021</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2021/12/06/how-to-use.html"><h1 class="p-name">How To Use Tailwind With Your Ghost Blog</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>Never one to be left behind, I am continually looking for a way to speed up my theme development. Call it desire to be cutting edge, or near of missing out, whatever it is I love to play around with it. One thing that gets loads of attention is Tailwind CSS, so naturally this was on my list to play around with.</p>
+  <section class="e-content post-body">
+      <p>Never one to be left behind, I am continually looking for a way to speed up my theme development. Call it desire to be cutting edge, or near of missing out, whatever it is I love to play around with it. One thing that gets loads of attention is Tailwind CSS, so naturally this was on my list to play around with.</p>
 <p>They call it “A utility-first CSS framework” but what it actually means is you can style all of your classes right in the HTML. There are pros and cons with this, but here’s how to get it working on your Ghost Blog.</p>
 <h2 id="before-you-start">Before You start</h2>
 <p>Fair warning this requires a bit of command line work, and if you’re not comfortable with this back away now! You will need:</p>
@@ -524,6 +501,18 @@ opacity: .5; color: #111 !important;
 <p>You can also try out some themes that already have Tailwind built into them such as <a href="https://github.com/tailwindtoolbox/Ghostwind">Ghostwind</a> or <a href="https://www.origintheme.co">Origin</a> but I am enjoying working new classes into my website. For more information on using Tailwind, see their <a href="https://tailwindcss.com/docs">documentation</a>.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2021-12-06 13:57:46 &#43;0000"><i class="fa-regular fa-calendar"></i>  06 Dec 2021</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -531,28 +520,13 @@ opacity: .5; color: #111 !important;
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2021/11/21/how-to-edit.html">
-    <h1 class="p-name">How To Edit Your Ghost Theme Using Github</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2021-11-21 13:10:23 &#43;0000">21 Nov 2021</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2021/11/21/how-to-edit.html"><h1 class="p-name">How To Edit Your Ghost Theme Using Github</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>Since <a href="https://gregmorris.co.uk/blog/migrating-from-wordpress/">first trying Ghost</a>, one of the best things about editing my theme is the ability to host on Github. Through a simple integration I can easily edit my theme to make changes from almost anywhere. If you want to do this too, this guide should help you out.</p>
+  <section class="e-content post-body">
+      <p>Since <a href="https://gregmorris.co.uk/blog/migrating-from-wordpress/">first trying Ghost</a>, one of the best things about editing my theme is the ability to host on Github. Through a simple integration I can easily edit my theme to make changes from almost anywhere. If you want to do this too, this guide should help you out.</p>
 <h2 id="ghost-integration">Ghost Integration</h2>
 <p>First set up the Github integration on your Ghost install, this provides you with an API Key that you will need when using Github. Head to the settings cog at the bottom of you control panel and click on Integrations.</p>
 <figure class="kg-card kg-image-card"><img class="kg-image" src="https://greg-morris.micro.blog/uploads/2024/e0d0564529.jpg" alt="" /></figure>
@@ -581,6 +555,18 @@ jobs:
 <p>You can now make changes to your theme through whatever way is easiest for you. I use <a href="https://code.visualstudio.com">Visual Studio Code</a>, but on iPad I found the best app is <a href="https://workingcopyapp.com">Working Copy</a>. Every time you push a change GitHub will build your site and them push these to your live site, this usually takes less than a minute.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2021-11-21 13:10:23 &#43;0000"><i class="fa-regular fa-calendar"></i>  21 Nov 2021</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -588,28 +574,13 @@ jobs:
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2021/07/03/how-to-publish.html">
-    <h1 class="p-name">How To Publish To Micro.blog With iOS Shortcuts</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2021-07-03 14:42:00 &#43;0000">03 Jul 2021</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2021/07/03/how-to-publish.html"><h1 class="p-name">How To Publish To Micro.blog With iOS Shortcuts</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>My blog is currently hosted on the excellent micro.blog service. I could go on about why I chose this place to host, but my thoughts are summed up on <a href="/2021/03/28/why-microblog.html">my post here</a>. It suits me perfectly because I publish everything to one place, from short ‘tweets’ to photos and also all of my writing. Due to this ease of posting I do most of it mobile from iOS with the help of some Shortcuts.</p>
 <h2>Images</h2>
 <p>Pictures are pretty easy to handle on micro.blog. If you want to post one image with some accompanying text there are a <a href="https://micro.blog/about">range of apps</a> to use, including the very Instragram-esc <a href="https://sunlit.io">Sunlit</a>. Meaning you can post whatever you want wherever you want.</p>
@@ -627,6 +598,18 @@ jobs:
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2021-07-03 14:42:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  03 Jul 2021</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -634,28 +617,13 @@ jobs:
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2021/04/27/how-to-do.html">
-    <h1 class="p-name">How To Do An EE Digital eSim Swop</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2021-04-27 10:07:22 &#43;0000">27 Apr 2021</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2021/04/27/how-to-do.html"><h1 class="p-name">How To Do An EE Digital eSim Swop</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>Despite it being a standard feature in many Android phones it took Apple until the iPhone XS to implement <a href="https://support.apple.com/en-gb/HT209044">a dual sim of sorts</a>. Even then you need to have one as an eSim and that limits the networks that can support it. Thankfully EE were one of the first, so for the last few years I have been using two sims in my iPhone, one for work and one for personal.</p>
+  <section class="e-content post-body">
+      <p>Despite it being a standard feature in many Android phones it took Apple until the iPhone XS to implement <a href="https://support.apple.com/en-gb/HT209044">a dual sim of sorts</a>. Even then you need to have one as an eSim and that limits the networks that can support it. Thankfully EE were one of the first, so for the last few years I have been using two sims in my iPhone, one for work and one for personal.</p>
 <p>One major pain is dealing with moving phones. I do that quite a bit, so ordering a paper EE eSim each time became a pain, not to mention an expense at £1.50 a time. Preplanning helps a little, but there has still been times I’ve been without service because I’ve broken my phone and can’t just pop my sim in another.</p>
 <p>Thankfully EE have a solution, and you can now download an EE eSim for your iPhone in seconds! Here’s how to do a digital EE eSim swop.</p>
 <p>You will need your current sim to be working to receive a text message, and also have already set up your new handset and downloaded the <a href="https://ee.co.uk/ee-and-me/my-ee-app">My EE app</a>.</p>
@@ -669,6 +637,18 @@ jobs:
 <p>Head into Settings &gt; Mobile data to change any of the options you’re selected on set up. If in any doubt call 150 from a working EE phone.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2021-04-27 10:07:22 &#43;0000"><i class="fa-regular fa-calendar"></i>  27 Apr 2021</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -676,28 +656,13 @@ jobs:
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/08/21/how-to-start.html">
-    <h1 class="p-name">How To Start Hacking Roam Research</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-08-21 11:16:00 &#43;0000">21 Aug 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/08/21/how-to-start.html"><h1 class="p-name">How To Start Hacking Roam Research</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>As with everything I get invested in I like to go in deep and see what it can really do. One of the easiest ways to start to mould <a href="https://gr36.com/tag/roam-research/">Roam Research</a> to your will and make it unique for your use case is to add in CSS or JS. These are two official supported ways that are easy to implement and can also be removes at your will.</p>
 <h2>Roam/css</h2>
 <p>You can easily change the look and feel of Roam by tweaking the CSS of the pages. This can go from a little light modding, to in-depth changes on how the layout looks.</p>
@@ -712,6 +677,18 @@ jobs:
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-08-21 11:16:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  21 Aug 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -719,28 +696,13 @@ jobs:
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/07/24/how-to-post.html">
-    <h1 class="p-name">How To Post Films Watched To Micropub</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-07-24 10:48:00 &#43;0000">24 Jul 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/07/24/how-to-post.html"><h1 class="p-name">How To Post Films Watched To Micropub</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>I am currently experimenting with moving all of my social things to micro.blog. I know I have tried <a href="https://gr36.com/youre-not-cool-enough-for-micro-blog/">this before</a> (twice) but this time I don’t want it to be my blog I just want a place to hang out and post everything to. This will mainly be an Instagram replacement, posting checkins as most importantly books and films I have watched.</p>
 <p>I can’t quite work out Goodreads yet, but by using <a href="https://letterboxd.com/">Letterboxed</a> I can post watched film easily using <a href="https://help.micro.blog/2017/api-posting/">Micropub</a>. You can of course use this with micro.blog but also with any service that support Micropub, so also applies to WordPress and other more mainstream services.</p>
 <h2>Choose your way</h2>
@@ -761,6 +723,18 @@ jobs:
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-07-24 10:48:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  24 Jul 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -768,28 +742,13 @@ jobs:
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/07/12/how-to-track.html">
-    <h1 class="p-name">How To Track Zwift Route Badges</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-07-12 10:56:53 &#43;0000">12 Jul 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/07/12/how-to-track.html"><h1 class="p-name">How To Track Zwift Route Badges</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>I would hope that no body starts morning that I am not writing about enough technology lately, but I’m finding it hard to write about anything at all. Never mind getting motivated to write about the very little news going around. I have been spending my time <a href="https://gr36.com/tag/cycling/">riding my bike when</a> weather allows, but when the bad weather comes I have to take it inside to the virtual playground of <a href="https://zwift.com/athlete/7b4045fa-cc88-4e49-92b4-f871e8811ef4">Zwift</a>.</p>
 <p>Writing recently in <a href="https://gr36.com/gtt-9/">my newsletter</a> I covered my love of the cycling (and running) platform and trying to gamify my cycling as much as possible. I’m still in the very early stages but having just crossed into level 11, my aim is to complete as many of the available routes as possible. Unfortunately Zwift is not great at this, and although the information is obtainable, it’s not easy to work with. So I spent some time building a way to track it.</p>
 <p><br /><ins class="adsbygoogle" style="text-align: center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-8335452151565777" data-ad-slot="5524743860"></ins></p>
@@ -802,6 +761,18 @@ jobs:
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-07-12 10:56:53 &#43;0000"><i class="fa-regular fa-calendar"></i>  12 Jul 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -809,28 +780,13 @@ jobs:
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/05/18/how-i-use.html">
-    <h1 class="p-name">How I use Todoist To Organise My Life</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-05-18 13:00:28 &#43;0000">18 May 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/05/18/how-i-use.html"><h1 class="p-name">How I use Todoist To Organise My Life</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>So. No apologies here, but I ripped off this idea directly from Matt Birchler’s write-up <a href="https://birchtree.me/blog/how-i-use-things-3-to-organize-my-life/">on his Things set up</a>. Even though he is a strong believer in the ability of Things, and also everyone <a href="https://twitter.com/GR36/status/1261314996048363521">in the replies</a>seems to think the <a href="https://gregmorris.co.uk/todoist-my-new-app-to-get-things-done/">Todoist</a> design is trash, I think very much that we have the same outlook on GTD. The basis of this revolves around “offloading your brain” so you can focus on other things.</p>
+  <section class="e-content post-body">
+      <p>So. No apologies here, but I ripped off this idea directly from Matt Birchler’s write-up <a href="https://birchtree.me/blog/how-i-use-things-3-to-organize-my-life/">on his Things set up</a>. Even though he is a strong believer in the ability of Things, and also everyone <a href="https://twitter.com/GR36/status/1261314996048363521">in the replies</a>seems to think the <a href="https://gregmorris.co.uk/todoist-my-new-app-to-get-things-done/">Todoist</a> design is trash, I think very much that we have the same outlook on GTD. The basis of this revolves around “offloading your brain” so you can focus on other things.</p>
 <p>I never set levels of tasks that I <em>HAVE</em> to get done each day, but I <em>DO</em> aim to get 3 main things ticked off each working day. This set up has been how I get everything done daily and also why I forget loads of meaningless stuff. I would love you all to give <a href="https://doist.grsm.io/gregmorris5327">Todoist a try here</a>. This isn’t a GTD set up, but it’s my set up and it all starts with the Inbox.</p>
 <h2 id="inbox">Inbox</h2>
 <p>More or less everything starts life in here. All my tasks from heavy-duty projects to simple reminders start life as a string of text in my inbox. Having tried almost all the major task managers, I am sure most people would agree that Todoist does it best for just dumping everything in and this is the reason why I struggle to take to any other app.</p>
@@ -874,6 +830,18 @@ jobs:
 <p>Check out <a href="https://doist.grsm.io/gregmorris5327">Todoist</a> and share your set up <a href="https://twitter.com/intent/tweet?text=@gr36%20here's%20my%20Todoist%20set%20up">with me</a>.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-05-18 13:00:28 &#43;0000"><i class="fa-regular fa-calendar"></i>  18 May 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -881,28 +849,13 @@ jobs:
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/05/15/how-to-set.html">
-    <h1 class="p-name">How To Set Up Strava To Record Calories In Apple Health</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-05-15 08:08:43 &#43;0000">15 May 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/05/15/how-to-set.html"><h1 class="p-name">How To Set Up Strava To Record Calories In Apple Health</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>After switching from recording my cycling on the Apple Watch to a <a href="https://gregmorris.co.uk/wahoo-element-bolt/">Wahoo Element</a> Bolt my activity levels seemed to suck. After previously smashing my move goals I was left short on some days even after a reasonable ride. Simply because Strava wasn’t calculating my calories and it took me ages to find out why.</p>
+  <section class="e-content post-body">
+      <p>After switching from recording my cycling on the Apple Watch to a <a href="https://gregmorris.co.uk/wahoo-element-bolt/">Wahoo Element</a> Bolt my activity levels seemed to suck. After previously smashing my move goals I was left short on some days even after a reasonable ride. Simply because Strava wasn’t calculating my calories and it took me ages to find out why.</p>
 <p>After a few days of Googling around and finding all sorts of weird information I <a href="https://support.strava.com/hc/en-us/community/posts/360039627911-Apple-Watch-App-not-counting-calories">eventually discovered a fix</a>. I tracked the issue down to a really simple one, but something that isn’t immediately obvious — you need to make sure that Strava has your weight and your bikes weight recorded.</p>
 <p>You can only do all of this on the website and not the mobile app, so make sure you can log in on the web. Your weight is changeable in the app to your profile, but you can’t add or customise your gear for some reason. You will need to log in online, create your bike, and make sure you also give it a weight. A rough guess is fine but you can usually track down the correct weight with a quick search of the manufactures website.</p>
 <p>Once this is competed your new runs and bike rides will contain calorie information that will be passed to Apple Health. If you want to get this for older rides, just tap edit activity and then save it again. This will pass the last few days worth of activity back to Apple Health but not all of it, and it’s temperamental at best with syncing.</p>
@@ -910,6 +863,18 @@ jobs:
 <p><br />This should mean you are getting all of the credit for your rides going forward. It’s surprising how addictive filling your rings on your Apple Watch is, and Apple Health makes it easy to share your activity data if a medical issue requires it. Strava is great for keeping all your rides logged, but keep it in other places too just in case you want to switch at a later date.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-05-15 08:08:43 &#43;0000"><i class="fa-regular fa-calendar"></i>  15 May 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -917,28 +882,13 @@ jobs:
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/04/27/how-to-open.html">
-    <h1 class="p-name">How To Open External Links In A New Tab By Default In Ghost</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-04-27 15:12:43 &#43;0000">27 Apr 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/04/27/how-to-open.html"><h1 class="p-name">How To Open External Links In A New Tab By Default In Ghost</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>Updated: Added in non-jQuery code snippet</p>
 <p>This problem is a reasonably simple one if you know what you are doing with writing Javascript. Unfortunately, I am not, and this feels like an issue that shouldn’t need some script, but here we are.</p>
 <p>After loads of Googling, looking at Github Gist, and trial and error, I finally found a solution to opening new links in a new tab thanks to <a href="https://www.insidersbyte.com/open-external-links-in-a-new-tab-by-default-ghost/">InsidersByte</a>.</p>
@@ -970,6 +920,18 @@ var links = document.links;</code></pre>
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-04-27 15:12:43 &#43;0000"><i class="fa-regular fa-calendar"></i>  27 Apr 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -977,28 +939,13 @@ var links = document.links;</code></pre>
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/27/how-to-restrict.html">
-    <h1 class="p-name">How To Restrict Apple News To Make It Bearable</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-27 14:25:35 &#43;0000">27 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/27/how-to-restrict.html"><h1 class="p-name">How To Restrict Apple News To Make It Bearable</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>To motivate myself to write more, I’ve been reading more. Not just online posts but magazines and books. Looking to subscriptions service and news aggregators, despite <a href="https://gregmorris.co.uk/blog/apple-news-forcing/">my initial hate</a> – Apple News won me over.</p>
+  <section class="e-content post-body">
+      <p>To motivate myself to write more, I’ve been reading more. Not just online posts but magazines and books. Looking to subscriptions service and news aggregators, despite <a href="https://gregmorris.co.uk/blog/apple-news-forcing/">my initial hate</a> – Apple News won me over.</p>
 <p>It turns out I didn’t need to use it more; I didn’t need to ‘train the algorithm’, I just needed to turn off the news part! You see, I hate viewing or reading the news – it is that simple. It is full of twisted and corrupted stores that are either designed or portrayed in such a way to manipulate your emotions.</p>
 <figure class="kg-card kg-image-card"><img class="kg-image" title="Apple-news-settings-1.png" src="https://greg-morris.micro.blog/uploads/2024/4b3bfa49a1.jpg" alt="Apple news settings 1" /></figure>
 <p>There is a way to do this, but it’s hidden away in the settings titled “Restrict Stories in Today”. Not a great label for a toggle that should be much easier to find, but I would presume Apple doesn’t want you to turn it on. Go to Settings &gt; News and toggle this to on.</p>
@@ -1006,6 +953,18 @@ var links = document.links;</code></pre>
 <p>There are downsides to this, the discovery of new channels can be more difficult, and you might not be kept as upto date with current affairs as you once were. Be a little more mindful of not creating an echo chamber, and you should get on much better. I am now much more open to subscribing to Apple News+, and many of the channels I am now following are News+ channels. So there is a benefit to Apple in the long run – subscription all the things!</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-27 14:25:35 &#43;0000"><i class="fa-regular fa-calendar"></i>  27 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -1013,28 +972,13 @@ var links = document.links;</code></pre>
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/22/how-to-host.html">
-    <h1 class="p-name">How To Host Your Own Ghost Blog On Digital Ocean</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-22 08:30:00 &#43;0000">22 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/22/how-to-host.html"><h1 class="p-name">How To Host Your Own Ghost Blog On Digital Ocean</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>I still blame <a href="https://birchtree.me/blog/the-biggest-change-to-birchtree-in-5-years/">Matt Birchler</a> for putting the idea in my head, I was quite happy on WordPress (not completely but pretty happy) and then he comes in and introduces <a href="https://ghost.org/">Ghost to me</a>, and I moved within a few days. On first look it seems like a ridiculously expensive option, and more suited to larger companies, but if you don’t want to splash out the $29/per month there are other options.</p>
 <p>If you want to get a Ghost blog set up, its pretty easy to host it ‘yourself’,  here is a short guide on doing it on a Digital Ocean droplet.</p>
 <p><img style="margin-left: auto; margin-right: auto;" title="Screenshot-2020-01-21-at-10.05.43-1.png" src="https://greg-morris.micro.blog/uploads/2024/9cb8be9542.jpg" alt="Screenshot 2020 01 21 at 10 05 43 1" width="1000" height="771" border="0" /></p>
@@ -1058,6 +1002,18 @@ var links = document.links;</code></pre>
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-22 08:30:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  22 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -1065,28 +1021,13 @@ var links = document.links;</code></pre>
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/09/how-to-find.html">
-    <h1 class="p-name">How To Find Your iPad Even If Its Switched Off</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-09 08:38:00 &#43;0000">09 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/09/how-to-find.html"><h1 class="p-name">How To Find Your iPad Even If Its Switched Off</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>First off – this is no guarantee, but it should help.</p>
 <p>The secret sauce to finding you iPhone after you’ve looked in the obvious places is Apples trusty ‘Find My’ App. Previously called find my iPhone, it will also track your Apple Watch, iPad, Mac’s and even AirPods. To do this is need location access and many people don’t give it enough access to be able to do the best job it can.</p>
 <p>Privacy is a huge deal, and this is understandable, but should the worst happen you really want to track down your device as quickly and easily as possible. I have spent 20 mins rooting through my car, only to then trace my AirPods to being back at home on my desk – this tip may help recover your device and calm you down.</p>
@@ -1098,6 +1039,18 @@ var links = document.links;</code></pre>
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-09 08:38:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  09 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -1105,28 +1058,13 @@ var links = document.links;</code></pre>
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2019/11/20/how-i-use.html">
-    <h1 class="p-name">How I Use Agenda</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2019-11-20 19:59:17 &#43;0000">20 Nov 2019</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2019/11/20/how-i-use.html"><h1 class="p-name">How I Use Agenda</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p><img style="margin-left: auto; margin-right: auto;" title="Agenda-featured.jpg" src="https://greg-morris.micro.blog/uploads/2024/ce935fbf77.jpg" alt="Agenda featured" width="1000" height="500" border="0" />For the last few weeks, I have been throwing my life into Agenda, I’ve played around with it previously, but this time it seems to have stuck. I’m one of those people that like to try out an app or service just because people are using it, and this is what I did in 2018 when Agenda won the apple design award. I think I had signed up previously to use it on Mac but didn’t hang around very long.</p>
 <p>The only issue is this is a completely different approach to note taking. It ditches the somewhat traditional approach of a list of notes, in folders and turns it on its head. Everything is based around your calendar and dates. You can of course make notes without this, but its main power stems from tying into events in your life. For years I have been living out of my calendar and task management app (or apps), and I’ve been searching for a service that does it all for me. I feel like I have tried everything, from <a href="https://gr36.com/todoist-my-new-app-to-get-things-done/">Todoist</a> to <a href="https://gr36.com/using-notion-web-clipper/">Notion</a>, to more recently <a href="https://gr36.com/using-apple-notes-to-write-in-2019/">Apple Notes</a>. My life is split into to distinct area and Agenda is already benefiting me in both.</p>
 <h2><strong><strong>Work</strong></strong></h2>
@@ -1156,6 +1094,18 @@ var links = document.links;</code></pre>
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2019-11-20 19:59:17 &#43;0000"><i class="fa-regular fa-calendar"></i>  20 Nov 2019</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -1163,28 +1113,13 @@ var links = document.links;</code></pre>
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2019/08/30/how-to-reset.html">
-    <h1 class="p-name">How To Reset And Re-Pair DJI Spark Controller</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2019-08-30 16:36:10 &#43;0000">30 Aug 2019</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2019/08/30/how-to-reset.html"><h1 class="p-name">How To Reset And Re-Pair DJI Spark Controller</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>I’m new to drones, but decided to try one out to get some more interesting video and I’m glad I did. However because it is so new to me I didn’t really want to spend loads of cash on one if I wasn’t going to use it, so I decided to pick up a used<a href="https://www.dji.com/uk/spark"> DJI Spark</a> and DJI Spark controller one.</p>
+  <section class="e-content post-body">
+      <p>I’m new to drones, but decided to try one out to get some more interesting video and I’m glad I did. However because it is so new to me I didn’t really want to spend loads of cash on one if I wasn’t going to use it, so I decided to pick up a used<a href="https://www.dji.com/uk/spark"> DJI Spark</a> and DJI Spark controller one.</p>
 <p>I managed to get a fly more kit with a few extras for a bargain price, but when it turned up I had issues connecting and paring. There wasn’t a whole load of information out there other than forum posts, but I managed to piece everything together and get it working again. Hopefully the guide will help you as well.</p>
 <div class="kg-card kg-callout-card kg-callout-card-grey">
 <div class="kg-callout-emoji">💡</div>
@@ -1199,6 +1134,18 @@ var links = document.links;</code></pre>
 <p>Dont forget you need to WiFi connect to the controller (password is 12341234 for all remotes) and then open the DJI app. Hopefully you’ll be up and flying in no time.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2019-08-30 16:36:10 &#43;0000"><i class="fa-regular fa-calendar"></i>  30 Aug 2019</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -1206,28 +1153,13 @@ var links = document.links;</code></pre>
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2019/05/23/how-to-add.html">
-    <h1 class="p-name">How To Add Twitter Cards To Wordpress</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2019-05-23 14:31:30 &#43;0000">23 May 2019</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2019/05/23/how-to-add.html"><h1 class="p-name">How To Add Twitter Cards To Wordpress</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>Sharing previews are yet another thing missing from WordPress which should really be included by now. It’s dead easy to <a href="https://en-gb.wordpress.org/plugins/wordpress-seo/">install a plugin</a> and have it all done for you, but why bother with slowing down your site with needless plugins when you can add a tiny bit of code to your functions file.</p>
 <pre><code>//Add Twitter Cards Meta Info
 function add_twitter_card_info() {
@@ -1256,6 +1188,18 @@ add_action( ‘wp_head’, ‘add_twitter_card_info’);
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2019-05-23 14:31:30 &#43;0000"><i class="fa-regular fa-calendar"></i>  23 May 2019</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -1263,28 +1207,13 @@ add_action( ‘wp_head’, ‘add_twitter_card_info’);
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2019/05/20/how-to-exclude.html">
-    <h1 class="p-name">How To Exclude A Category From Main WordPress RSS Feed, But Not All Feeds</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2019-05-20 18:00:53 &#43;0000">20 May 2019</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2019/05/20/how-to-exclude.html"><h1 class="p-name">How To Exclude A Category From Main WordPress RSS Feed, But Not All Feeds</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p><!--kg-card-begin: html--></p>
 <p>In my journey back to WordPress, there are lots of little modifications I need to make the website my own. One of which is the addition of micro and link posts.</p>
 <p>I do not like all posts showing in the main RSS feed nor on the main index page of my blog. Many options and guides tell you to install plugins or add in code to your functions to exclude categories to all feeds. If you can avoid a plugin, then I would advise it, to prevent any unnecessary loading of your blog.</p>
@@ -1295,6 +1224,18 @@ add_action( ‘wp_head’, ‘add_twitter_card_info’);
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2019-05-20 18:00:53 &#43;0000"><i class="fa-regular fa-calendar"></i>  20 May 2019</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -1302,28 +1243,13 @@ add_action( ‘wp_head’, ‘add_twitter_card_info’);
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2019/03/03/how-to-use.html">
-    <h1 class="p-name">How To Use Rodecaster Pro Multi Track With Audio Hijack</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2019-03-03 15:04:00 &#43;0000">03 Mar 2019</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2019/03/03/how-to-use.html"><h1 class="p-name">How To Use Rodecaster Pro Multi Track With Audio Hijack</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>It has only been a few days since <a href="/2019-03-03-rodecaster-update/">Rode updated</a> its Rodecaster Pro to utilise Muti track but it has already proved to be a brilliant upgrade. The ability to output upto 14 tracks simultaneously for post editing is quite frankly a ridiculous feat, but may take a little time to get your head around.</p>
 <p>Here’s how to take advantage of the update and record using Audio Hijack – which is my <a href="https://gr36.com/gear/">podcast recording software</a> of choice.</p>
 <h2><strong><strong>Understand The Update</strong></strong></h2>
@@ -1340,6 +1266,18 @@ add_action( ‘wp_head’, ‘add_twitter_card_info’);
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2019-03-03 15:04:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  03 Mar 2019</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -1347,28 +1285,13 @@ add_action( ‘wp_head’, ‘add_twitter_card_info’);
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2018/11/08/how-to-use.html">
-    <h1 class="p-name">How To Use The iPhone XS eSim On EE</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2018-11-08 01:49:00 &#43;0000">08 Nov 2018</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2018/11/08/how-to-use.html"><h1 class="p-name">How To Use The iPhone XS eSim On EE</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>After a few days of false information, forum posts that have half truths in them and a couple of telephone calls – I have managed to set up my iPhone XS with dual sims and here is how to do it.</p>
 <h2><strong>Preparation</strong></h2>
 <p>If you want to go dual sim on your iPhone XS there are a few ways, but one of your sims is going to have to become an eSim. This technology isn’t new but Apple are the first to do it mass market and in the UK it is only supported by EE at the moment. Unfortunately this is only currently available for pay monthly personal tariffs but they claim to be expanding the roll out in the coming months. So you won’t have the option on pay as you go, flex or business accounts.</p>
@@ -1381,6 +1304,18 @@ add_action( ‘wp_head’, ‘add_twitter_card_info’);
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2018-11-08 01:49:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  08 Nov 2018</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -1388,28 +1323,13 @@ add_action( ‘wp_head’, ‘add_twitter_card_info’);
 
 	
 		<li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2018/01/20/how-to-build.html">
-    <h1 class="p-name">How To Build A Micro Blog On Jekyll</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2018-01-20 16:14:00 &#43;0000">20 Jan 2018</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2018/01/20/how-to-build.html"><h1 class="p-name">How To Build A Micro Blog On Jekyll</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>After exploring other options to sharing on social media and <a href="https://gr36.com/2018-01-20-using-microblog/">using Micro.blog</a> I’m stuck. There doesn’t seem to be the perfect option out there to fulfil all of my needs so for now I still to my own blog.</p>
 <p>Now comes the issues with posting lots of updates and where they need to go. Ultimately there are a few things I want to achieve.</p>
 <ul>
@@ -1477,6 +1397,18 @@ https://gr36.com
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2018-01-20 16:14:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  20 Jan 2018</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 

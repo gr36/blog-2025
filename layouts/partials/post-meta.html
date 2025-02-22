@@ -1,21 +1,15 @@
-<div class="post-meta">
-   {{ partial "reply-via.html" . }}
+<div class="post_meta">
+  <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}"><i class="fa-regular fa-calendar"></i>  {{ .Date.Format "02 Jan 2006" }}</time>
+  {{ if .Params.categories }}
+  <div>
+  {{ range .Params.categories }}
+    <a href="/categories/{{ . | urlize }}"><i class="fa-solid fa-tag"></i>  {{ . }} </a>
+  {{ end }}
+  </div>
+  {{ end }}
 </div>
-<div class="comments">
-  <!-- Leave A Reply section -->
-  <details id="leave-reply">
-    <summary>Leave A Reply Instead? <i class="fa-brands fa-microblog"></i><i class="fa-brands fa-bluesky" ></i><i class="fa-brands fa-mastodon"></i></summary>
-  </details>
 
-  <!-- Comments Section in a Collapsible <details> -->
-  <details id="comments-section">
-    <summary id="comments-summary">Read Comments (0)</summary>
-    <div id="microblog-comments"></div>
-  </details>
-
-  <!-- Load Micro.blog Script -->
-  <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
-</div>
+{{ partial "reply-via.html" . }}
 
 <script>
   // Wait for the Micro.blog script to load and render its content

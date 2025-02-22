@@ -85,9 +85,16 @@
 <div class="header flow">
     <svg role="img" aria-label="Greg Morris" viewBox="0 0 420.84 64.11" xmlns="http://www.w3.org/2000/svg">
     <defs>
-    <style>.cls-1 {
+    <style>
+        .cls-1 {
             fill: #231f20;
-        }</style>
+        }
+        @media (prefers-color-scheme: dark) {
+            .cls-1 {
+                fill: white;
+            }
+        }
+    </style>
     </defs>
     <g data-name="Layer 1">
     <path class="cls-1" d="M0,27.45v-.14C0,13.01,11.14,1.3,26.37,1.3c8.99,0,14.59,2.44,19.76,6.9l-6.97,8.41c-3.81-3.23-7.4-5.1-13.15-5.1-8.05,0-14.44,7.12-14.44,15.67v.14c0,9.2,6.33,15.95,15.24,15.95,4.1,0,7.62-1.01,10.42-3.02v-7.19h-11.14v-9.56h21.85v21.85c-5.17,4.39-12.29,7.98-21.49,7.98C10.78,53.33,0,42.4,0,27.45Z"/>
@@ -155,32 +162,19 @@
 
 
 <section class="blog-posts">
-    <ul class="post-list">
+    <ul class="post-list flow">
     
     
         
         
             <li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/22/i-have-started.html">
-    <h1 class="p-name">I Have Started Showing Ads</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-22 12:00:00 &#43;0000">22 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/22/i-have-started.html"><h1 class="p-name">I Have Started Showing Ads</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <!--kg-card-begin: html--><p>I’m not too fond of ads. I promised myself I would never show them on my blog and hate the way they looked on websites that did. With all this said, I have turned some on for a little experiment and wanted to share why.</p>
+  <section class="e-content post-body">
+      <!--kg-card-begin: html--><p>I’m not too fond of ads. I promised myself I would never show them on my blog and hate the way they looked on websites that did. With all this said, I have turned some on for a little experiment and wanted to share why.</p>
 <p>I have never made a penny from writing, podcasting or making videos. I have never tried to really and never expect to. However, after writing for more than seven years, I have noticed that some posts get traction long after I have posted them and seem to be serving a purpose to people.</p>
 <p>Guides like my repairing a DJI Spark controller get more than 100 views a day, they are helping people out, and I am happy about that. On digging into my site stats (I don’t do this very often) I discovered that 92% of these people are bouncing immediately off the site. They are merely using this page they found from Googling, getting the information and leaving.</p>
 <p>I do get the very occasional email thanking me for publishing the information, one reader in particular, asked to send me some money because I solved his issue with his Lumia stuck when booting. However, most people are not reading very much.</p>
@@ -189,6 +183,16 @@
 <!--kg-card-end: html-->
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-22 12:00:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  22 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -196,28 +200,13 @@
 
         
             <li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/22/how-to-host.html">
-    <h1 class="p-name">How To Host Your Own Ghost Blog On Digital Ocean</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-22 08:30:00 &#43;0000">22 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/22/how-to-host.html"><h1 class="p-name">How To Host Your Own Ghost Blog On Digital Ocean</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>I still blame <a href="https://birchtree.me/blog/the-biggest-change-to-birchtree-in-5-years/">Matt Birchler</a> for putting the idea in my head, I was quite happy on WordPress (not completely but pretty happy) and then he comes in and introduces <a href="https://ghost.org/">Ghost to me</a>, and I moved within a few days. On first look it seems like a ridiculously expensive option, and more suited to larger companies, but if you don’t want to splash out the $29/per month there are other options.</p>
 <p>If you want to get a Ghost blog set up, its pretty easy to host it ‘yourself’,  here is a short guide on doing it on a Digital Ocean droplet.</p>
 <p><img style="margin-left: auto; margin-right: auto;" title="Screenshot-2020-01-21-at-10.05.43-1.png" src="https://greg-morris.micro.blog/uploads/2024/9cb8be9542.jpg" alt="Screenshot 2020 01 21 at 10 05 43 1" width="1000" height="771" border="0" /></p>
@@ -241,6 +230,18 @@
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-22 08:30:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  22 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -248,26 +249,13 @@
 
         
             <li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/21/how-to-stop.html">
-    <h1 class="p-name">How to Stop the Internet From Ruining Your Relationship | GQ</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-21 19:00:00 &#43;0000">21 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/21/how-to-stop.html"><h1 class="p-name">How to Stop the Internet From Ruining Your Relationship | GQ</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <!--kg-card-begin: html--><p>Luke Winkie <a href="https://www.gq.com/story/social-media-rules-couples">wrote</a>:</p>
+  <section class="e-content post-body">
+      <!--kg-card-begin: html--><p>Luke Winkie <a href="https://www.gq.com/story/social-media-rules-couples">wrote</a>:</p>
 <blockquote><p>There is a whole spectrum of issues that can come up for people regarding their significant other’s internet presence,” says Gray. “From things like, ‘Why are you always liking this model’s photographs?’ or ‘Why haven’t you been liking my posts lately?’ all the way to ‘I would really prefer if you didn’t scroll through your feed while we are eating together.</p></blockquote>
 <p>I am always constantly surprised on the level of thought that goes into social media etiquette. On recently reshuffling my twitter and trying to move people into lists some people reached out and complained I unfollowed them – which I guess sis understandable. But couples have whole issues, and more than likely ended relationships, over their other half’s online footprints.</p>
 <p>Personally I couldn’t care less one what others do and what pictures the doubles tap, but we do have a constant issue at home on the usage of tech in family times. My wife had a skill, that I don’t, to be able to watch a television program and also scroll through Facebook and also chat to her friends.</p>
@@ -275,6 +263,16 @@
 <!--kg-card-end: html-->
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-21 19:00:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  21 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -282,26 +280,13 @@
 
         
             <li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/21/importing-apple-notes.html">
-    <h1 class="p-name">Importing Apple Notes Into Bear</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-21 14:00:00 &#43;0000">21 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/21/importing-apple-notes.html"><h1 class="p-name">Importing Apple Notes Into Bear</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>I have been using <a href="https://gregmorris.co.uk/bear-the-serious/">Bear notes for years now</a>, it’s by far my favourite app for writing, and goes far beyond a simple notes app. The great thing is it keeps getting better and better without overly complicating things and becoming hard to use – not to mention it looks gorgeous.</p>
+  <section class="e-content post-body">
+      <p>I have been using <a href="https://gregmorris.co.uk/bear-the-serious/">Bear notes for years now</a>, it’s by far my favourite app for writing, and goes far beyond a simple notes app. The great thing is it keeps getting better and better without overly complicating things and becoming hard to use – not to mention it looks gorgeous.</p>
 <p>The recent update to <a href="https://twitter.com/BearNotesApp/status/1219258627816665097">Version 1.7.8</a> brings in some improvements to tag icons but also an automated way to import your Apple Notes. This is something that has been lacking, not due to the developers, but to Apple’s locked down approach to notes, unlike importing from other apps which has existed for quite awhile.</p>
 <p>This is a bit of a workaround, and unfortunately you can only do this process on Mac.</p>
 <h2 id="mac-use-our-automator-workflow">Mac: use our Automator Workflow</h2>
@@ -328,6 +313,16 @@
 <p>For more information, see the full guide in the <a href="https://bear.app/faq/Import%20&amp;%20export/Migrate%20from%20Apple%20Notes/#how-to-use-this-automator-workflow">Bear FAQ’s</a></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-21 14:00:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  21 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -335,26 +330,13 @@
 
         
             <li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/21/he-wanted-a.html">
-    <h1 class="p-name">He Wanted a Unicorn. He Got ... a Sustainable Business | WIRED</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-21 08:41:53 &#43;0000">21 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/21/he-wanted-a.html"><h1 class="p-name">He Wanted a Unicorn. He Got ... a Sustainable Business | WIRED</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <!--kg-card-begin: html--><p>Klimt Finlay <a href="https://www.wired.com/story/he-wanted-unicorn-got-sustainable-business/">wrote</a>:</p>
+  <section class="e-content post-body">
+      <!--kg-card-begin: html--><p>Klimt Finlay <a href="https://www.wired.com/story/he-wanted-unicorn-got-sustainable-business/">wrote</a>:</p>
 <blockquote><p>His investors told him he should simply shutter the company. “They said ‘your time is worth more than this, shut it down, start again, we’ll give you more money to do that,'” Lavingia tells WIRED.</p></blockquote>
 <blockquote><p>But, Lavingia says, he felt a responsibility to the sellers on Gumroad. “We were processing $2.5 million every month,” he says. “Creators relied on that for rent,</p></blockquote>
 <p>This is everything wrong with startup and VC culture. A business that at the time was processing over $2.5million a month is deemed worthless in Silicone valley because it isn’t growing 20%, or being floated for $1billion.</p>
@@ -362,6 +344,16 @@
 <!--kg-card-end: html-->
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-21 08:41:53 &#43;0000"><i class="fa-regular fa-calendar"></i>  21 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -369,26 +361,13 @@
 
         
             <li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/21/migrating-from-wordpress.html">
-    <h1 class="p-name">Migrating From Wordpress To Ghost</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-21 08:31:22 &#43;0000">21 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/21/migrating-from-wordpress.html"><h1 class="p-name">Migrating From Wordpress To Ghost</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p>I’m going to be completely honest, this wasn’t easy for me – it was supposed to be straight forward, but everything that could have gone wrong did. I took the inspiration from <a href="https://birchtree.me/blog/the-biggest-change-to-birchtree-in-5-years/">Matt Birchler</a> to post about my migration and the issues I faced in the hope someone else won’t run into the same.</p>
+  <section class="e-content post-body">
+      <p>I’m going to be completely honest, this wasn’t easy for me – it was supposed to be straight forward, but everything that could have gone wrong did. I took the inspiration from <a href="https://birchtree.me/blog/the-biggest-change-to-birchtree-in-5-years/">Matt Birchler</a> to post about my migration and the issues I faced in the hope someone else won’t run into the same.</p>
 <h2 id="exporting-from-wordpress"><strong>Exporting From WordPress</strong></h2>
 <p>The easiest way to do this is through the <a href="https://wordpress.org/plugins/ghost/">Ghost export plugin</a>. The plugin promises to download all of your posts, pages, and information into an easy to import ZIP file. Unfortunately, I haven’t met anyone yet that this has worked correctly.</p>
 <p>In preparation, you will need to think about the categories you have on your blog. Ghost works on tags and not categories, so this information needs to be transferred before you export. Use the <a href="https://wordpress.org/plugins/wpcat2tag-importer/">Categories to Tags converter</a> plugin and run this once before export.</p>
@@ -406,6 +385,16 @@
 <p>Exporting and importing from hosting platforms needs to become more uniform. Manton Reece, the creator of micro.blog, has called for an <a href="https://www.manton.org/2017/11/24/blog-archive-format.html">implemented standard</a> to make things much more comfortable to move around. It is times like this when you wish something existed. Many applications spend time working on importing from other options, so perhaps it’s time this becomes a consideration to those that run blogging platforms.</p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-21 08:31:22 &#43;0000"><i class="fa-regular fa-calendar"></i>  21 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -413,26 +402,13 @@
 
         
             <li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/19/binge-release-podcasts.html">
-    <h1 class="p-name">Binge Release Podcasts?</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-19 16:10:36 &#43;0000">19 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/19/binge-release-podcasts.html"><h1 class="p-name">Binge Release Podcasts?</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <!--kg-card-begin: html--><p>I’ve always recorded my podcast weekly, edited and then released it a few days later. Four years later and I’ve never done anything differently, but the release of Charlie Chapman new podcast <a href="https://launchedfm.com/">Launched</a> has got me thinking about bingeing podcasts and when to release my own.</p>
+  <section class="e-content post-body">
+      <!--kg-card-begin: html--><p>I’ve always recorded my podcast weekly, edited and then released it a few days later. Four years later and I’ve never done anything differently, but the release of Charlie Chapman new podcast <a href="https://launchedfm.com/">Launched</a> has got me thinking about bingeing podcasts and when to release my own.</p>
 <p>In general, I’ve never been swept away by podcasts. There are a few I have found and then gone back to listen to entire back catalogues, but shows like <a href="https://serialpodcast.org/">Serial</a> or the million other crime things have never been my thing. But I think these Audio dramas are created with this in mind, consumed in one go. Although recently I listened to the entirety of <a href="https://www.bbc.co.uk/programmes/p07nkd84/episodes/downloads">The missing crytoqueen</a> on a long journey, and if I had to wait a week between episodes, it would have been a nightmare.</p>
 <p>At the moment I am recording 2 or 3 in a week and then leaving a couple of weeks before I record any more. It is allowing me to spread out my work editing and book a few more guests or focus on other things. With this in mind, I <em>could</em> drop 2 or 3 all at once and then record the others in the next few weeks? Or should I have a mass record and then release 5 or 6 all at once? Perhaps I am putting too much thought into it.</p>
 <p>It is a hard decision and one that Netflix and other streaming services are having to make. Do you release all episodes at once to create a real buzz, but then it be short-lived, or string it out for longer?</p>
@@ -441,6 +417,16 @@
 <!--kg-card-end: html-->
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-19 16:10:36 &#43;0000"><i class="fa-regular fa-calendar"></i>  19 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -448,28 +434,13 @@
 
         
             <li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-    <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/09/how-to-find.html">
-    <h1 class="p-name">How To Find Your iPad Even If Its Switched Off</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-09 08:38:00 &#43;0000">09 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/09/how-to-find.html"><h1 class="p-name">How To Find Your iPad Even If Its Switched Off</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <p><!--kg-card-begin: html--></p>
 <p>First off – this is no guarantee, but it should help.</p>
 <p>The secret sauce to finding you iPhone after you’ve looked in the obvious places is Apples trusty ‘Find My’ App. Previously called find my iPhone, it will also track your Apple Watch, iPad, Mac’s and even AirPods. To do this is need location access and many people don’t give it enough access to be able to do the best job it can.</p>
 <p>Privacy is a huge deal, and this is understandable, but should the worst happen you really want to track down your device as quickly and easily as possible. I have spent 20 mins rooting through my car, only to then trace my AirPods to being back at home on my desk – this tip may help recover your device and calm you down.</p>
@@ -481,6 +452,18 @@
 <p><!--kg-card-end: html--></p>
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-09 08:38:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  09 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+      <a href="/categories/guide"><i class="fa-solid fa-tag"></i>  Guide </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -488,26 +471,13 @@
 
         
             <li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2020/01/01/the-ipad-goes.html">
-    <h1 class="p-name">The iPad Goes Full Circle</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2020-01-01 11:40:00 &#43;0000">01 Jan 2020</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2020/01/01/the-ipad-goes.html"><h1 class="p-name">The iPad Goes Full Circle</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <!--kg-card-begin: html--><p>When I picked up the very first iPad on the day of the launch, I knew this device would open a different world. Universally panned as bigger iPhone, many critics didn’t see a future for a device type already tried a few times over. However, Apple knew, as well as I did, that this market would open up given enough time.</p>
+  <section class="e-content post-body">
+      <!--kg-card-begin: html--><p>When I picked up the very first iPad on the day of the launch, I knew this device would open a different world. Universally panned as bigger iPhone, many critics didn’t see a future for a device type already tried a few times over. However, Apple knew, as well as I did, that this market would open up given enough time.</p>
 <p>Yet this first device I held in my hand had a small market and very few uses. Apple touted a future of computing filled with devices such as these, and even if you choose to slash for the accompanying keyboard dock, there still wasn’t much you could do on an iPad – short of it being indeed a bigger iPhone.</p>
 <p>With this, the vast majority of usage became consumption, social media browsing, watching a video and surfing the web. Sure it replaced many seldom-used laptops in people homes, but it didn’t do much more to show us the future. Users saw no reason to upgrade, and while a few began to see the potential as the iPad became sleeker and more powerful. It wasn’t until I picked up an iPad Air that I had to work on, that posts like Federico’s <a href="https://www.macstories.net/stories/ipad-air-2-review-why-the-ipad-became-my-main-computer/">initial deluge of guides</a> on MacStories opened the floodgates.</p>
 <p>My rage quitting of the iPad dragged out longer than it should do and came to a head earlier this year. I shared <a href="https://gr36.com/today-is-the-day-i-quit-the-ipad/">my disappointment in the failures of iOS</a> and also my change in circumstances that lead to its demise in my life. The iPad Pro was no longer the device I enjoyed using and no longer one my life could support. I couldn’t justify a more than £1300 investment to need a Mac around as well. I don’t regret using the iPad as my computer; ultimately if my life remained as nomadic as it once was, I might have remained a die-hard user.</p>
@@ -515,6 +485,16 @@
 <!--kg-card-end: html-->
 
   </section>
+  <div class="post_meta">
+    <time datetime="2020-01-01 11:40:00 &#43;0000"><i class="fa-regular fa-calendar"></i>  01 Jan 2020</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 
@@ -522,26 +502,13 @@
 
         
             <li class="post">
-    <div class="post-title flow">
-
-<div><span>
-
-    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
-
-</span></div>
-
-
-  <a href="http://localhost:1313/2019/12/19/just-thinking.html">
-    <h1 class="p-name">Just Thinking</h1>
-</a>
- 
-<div class="datetime" style="font-size: 70%">
-    <i class="fa-regular fa-calendar"></i> 
-    <time datetime="2019-12-19 12:06:04 &#43;0000">19 Dec 2019</time>
+  <div class="post-title">
+    
+      <a href="http://localhost:1313/2019/12/19/just-thinking.html"><h1 class="p-name">Just Thinking</h1></a>
+    
   </div>
-  </div>
-<section class="e-content post-body">
-     <!--kg-card-begin: html--><p><!--kg-card-begin: html--></p>
+  <section class="e-content post-body">
+      <!--kg-card-begin: html--><p><!--kg-card-begin: html--></p>
 <p>How many of us spend life flitting in and out of the present time? Any given moment, we are away and into our thoughts with limited awareness of what is going on around us. It’s good to sit and just think about things, but being present in the current moment is as relevant, and I believe this needs more attention and thought.</p>
 <p>Only when you are aware of where your attention is that you become aware that it is very rarely on where it should be. Yet when I sit and think I often find myself unable to stay focused and succumb to distractions if I am not paying attention. My mind wanders all over the place, from thought to thought and down avenues that it really should not.</p>
 <p>When I sit and meditate that I can begin to let things go and indeed empty my mind of thoughts, my mind becomes present, and I can focus entirely – the fog starts to lift. Mindful of where my thoughts are going and able to come back to what is essential.</p>
@@ -550,6 +517,16 @@
 <!--kg-card-end: html-->
 
   </section>
+  <div class="post_meta">
+    <time datetime="2019-12-19 12:06:04 &#43;0000"><i class="fa-regular fa-calendar"></i>  19 Dec 2019</time>
+    
+    <div>
+    
+      <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+    
+    </div>
+    
+  </div>
 </li>
 
 

@@ -2,7 +2,7 @@
 {{ $paginator := .Paginate $combinedPages 10 }}
 
 <section class="blog-posts">
-    <ul class="post-list">
+    <ul class="post-list flow">
     
     {{ if or .IsHome .Site.Params.paginate_categories }}
         {{ $list := $paginator.Pages }}
