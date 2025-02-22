@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <script src="https://kit.fontawesome.com/f4170b83c1.js" crossorigin="anonymous"></script>
+
+  <link rel="me" href="https://github.com/gr36" />
+  <link rel="me" href="https://instagram.com/_greg_morris" />
+  <link rel="me" href="https://gregmorris.co.uk">
+  <meta property="og:description" content="Without getting too much into the tools I use (yet again) I have been enjoying using Notion lately for all of my productivity needs. It’s not perfect but the power and flexibility it offers me for free is pretty crazy. One of the downsides is using it on the go as the iOS apps leave a little to be desired, but seeing as my usage on mobile is limited now I built a shortcut to help out." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://localhost:1313/2021/10/26/add-information-to.html" />
+<meta name=”twitter:card” content=”summary” /> 
+
+
+
+<meta property="og:image" content="https://greg-morris.micro.blog/uploads/2024/a19ce8904e.jpg" />
+
+<meta property="og:image" content="https://greg-morris.micro.blog/uploads/2024/5ed5c14b64.jpg" />
+
+
+
+
+
+
+
+
+
+<meta property="article:published_time" content="2021-10-26T19:00:00&#43;00:00"/>
+
+
+
+<meta property="article:modified_time" content="2024-04-12T09:58:00&#43;00:00"/>
+
+
+
+
+
+
+
+
+
+
+  <title>Greg Morris
+		- Add Information To Notion With Shortcuts</title>
+  
+  <link rel="alternate" href="http://localhost:1313/feed.xml" type="application/rss+xml" title="Greg Morris">
+  <link rel="alternate" href="http://localhost:1313/feed.json" type="application/json" title="Greg Morris">
+
+
+
+
+
+
+
+
+
+
+
+<link rel="EditURI" type="application/rsd+xml" href="http://localhost:1313/rsd.xml">
+<link rel="authorization_endpoint" href="https://micro.blog/indieauth/auth">
+<link rel="token_endpoint" href="https://micro.blog/indieauth/token">
+<link rel="subscribe" href="https://micro.blog/users/follow">
+<link rel="webmention" href="https://micro.blog/webmention">
+<link rel="micropub" href="https://micro.blog/micropub">
+<link rel="microsub" href="https://micro.blog/microsub">
+
+<link rel="stylesheet" href="/custom.css?1735590388">
+
+
+  <link rel="stylesheet" href="/css/bookgoals.css?1736075796">
+
+
+
+  
+<script type="module">
+  const base64Decode = (text) => decodeURIComponent(atob(text));
+
+  document.addEventListener('click', e => {
+    const link = e.target.closest('a.reply-by-email');
+
+    if (link) {
+      e.preventDefault();
+      window.location = base64Decode(link.dataset.meta.match(/.{2}/g).map(hex => String.fromCharCode(parseInt(hex, 16) ^ 0x24)).join(''));
+    }
+  });
+  </script>
+
+
+</head>
+
+<body>
+<div class="header flow">
+    <svg role="img" aria-label="Greg Morris" viewBox="0 0 420.84 64.11" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+    <style>.cls-1 {
+            fill: #231f20;
+        }</style>
+    </defs>
+    <g data-name="Layer 1">
+    <path class="cls-1" d="M0,27.45v-.14C0,13.01,11.14,1.3,26.37,1.3c8.99,0,14.59,2.44,19.76,6.9l-6.97,8.41c-3.81-3.23-7.4-5.1-13.15-5.1-8.05,0-14.44,7.12-14.44,15.67v.14c0,9.2,6.33,15.95,15.24,15.95,4.1,0,7.62-1.01,10.42-3.02v-7.19h-11.14v-9.56h21.85v21.85c-5.17,4.39-12.29,7.98-21.49,7.98C10.78,53.33,0,42.4,0,27.45Z"/>
+    <path class="cls-1" d="M57.45,13.94h10.93v7.76c2.23-5.25,5.75-8.77,12.29-8.48v11.43h-.58c-7.26,0-11.71,4.31-11.71,13.58v14.23h-10.93V13.94Z"/>
+    <path class="cls-1" d="M84.56,33.42v-.14c0-11,7.83-20.05,19.04-20.05,12.86,0,18.76,9.99,18.76,20.91,0,.86-.07,1.8-.15,2.87h-26.8c1.08,4.96,4.53,7.55,9.41,7.55,3.67,0,6.25-1.15,9.34-3.95l6.25,5.53c-3.66,4.53-8.77,7.19-15.74,7.19-11.57,0-20.12-8.12-20.12-19.91ZM111.72,30.19c-.65-4.89-3.52-8.19-8.12-8.19s-7.48,3.23-8.34,8.19h16.46Z"/>
+    <path class="cls-1" d="M130.72,60.08l3.74-8.19c4.03,2.23,7.84,3.52,13.01,3.52,7.47,0,11-3.59,11-10.49v-1.87c-3.23,3.95-6.76,6.25-12.58,6.25-8.99,0-17.1-6.47-17.1-17.96v-.14c0-11.5,8.26-17.97,17.1-17.97,5.96,0,9.49,2.52,12.43,5.75v-5.03h10.92v29.83c0,6.83-1.65,11.93-4.89,15.16-3.66,3.66-9.13,5.17-16.6,5.17-6.32,0-12.15-1.44-17.03-4.02ZM158.46,31.34v-.14c0-5.25-4.02-8.91-9.42-8.91s-9.34,3.66-9.34,8.91v.14c0,5.39,3.95,8.91,9.34,8.91s9.42-3.66,9.42-8.91Z"/>
+    <path class="cls-1" d="M201.76,2.16h11.93l13.22,21.27,13.22-21.27h11.93v50.31h-11V19.62l-14.16,21.49h-.29l-14.01-21.27v32.63h-10.85V2.16Z"/>
+    <path class="cls-1" d="m261.16 33.42v-0.14c0-11.07 8.91-20.05 20.91-20.05s20.77 8.77 20.77 19.91v0.14c0 11.07-8.91 20.05-20.91 20.05s-20.77-8.77-20.77-19.91zm30.9 0v-0.14c0-5.68-4.1-10.64-10.13-10.64s-9.99 4.74-9.99 10.49v0.14c0 5.68 4.1 10.64 10.13 10.64s9.99-4.74 9.99-10.49z"/>
+    <path class="cls-1" d="M310.77,13.94h10.93v7.76c2.23-5.25,5.75-8.77,12.29-8.48v11.43h-.58c-7.26,0-11.71,4.31-11.71,13.58v14.23h-10.93V13.94Z"/>
+    <path class="cls-1" d="M340.82,13.94h10.93v7.76c2.23-5.25,5.75-8.77,12.29-8.48v11.43h-.58c-7.26,0-11.71,4.31-11.71,13.58v14.23h-10.93V13.94Z"/>
+    <path class="cls-1" d="M371.1,0h11.5v9.7h-11.5V0ZM371.38,13.94h10.93v38.52h-10.93V13.94Z"/>
+    <path class="cls-1" d="M389.58,47.36l4.67-7.19c4.24,3.09,8.48,4.6,12.15,4.6,3.16,0,4.6-1.15,4.6-2.88v-.14c0-2.37-3.74-3.09-7.98-4.46-5.39-1.51-11.5-4.1-11.5-11.57v-.14c0-7.84,6.32-12.22,14.09-12.22,4.89,0,10.13,1.65,14.37,4.46l-4.17,7.55c-3.81-2.23-7.62-3.59-10.42-3.59-2.66,0-4.02,1.15-4.02,2.66v.14c0,2.01,3.67,3.31,7.83,4.6,5.39,1.72,11.64,4.38,11.64,11.43v.14c0,8.55-6.4,12.43-14.73,12.43-5.46,0-11.36-1.8-16.53-5.82Z"/>
+    </g>
+    </svg>
+    <div class="repel flex">
+        <div class="subtitle">
+        Designer, Pretend Photographer, <span>Dad</span>
+        </div>
+        <div class="follow_links flex">
+            <a aria-label="micro.blog" href="https://micro.blog/gregmorris/"><i class="fa-brands fa-microblog"></i></a>
+            <a aria-label="bluesky" href="https://bsky.app/profile/gr36.com"><i class="fa-brands fa-bluesky"></i></a>
+            <a aria-label="mastodon" href="https://social.lol/@gr36"><i class="fa-brands fa-mastodon"></i></a>
+            <a aria-label="buy me a coffee" href="https://www.buymeacoffee.com/gregmorris"><i class="fa-solid fa-mug-saucer"></i></a>
+        </div>
+
+    </div>
+
+</div>
+
+<nav>
+    <ul>
+        <li >
+            <a href="/">Home</a>
+        </li>
+        
+        
+        <li >
+            <a href="/podcast/">Podcast</a>
+        </li>
+        
+        <li >
+            <a href="/photos/">Photos</a>
+        </li>
+        
+        <li >
+            <a href="/reading/">Reading</a>
+        </li>
+        
+        <li >
+            <a href="/about/">About Me</a>
+        </li>
+        
+    </ul>
+</nav>
+
+
+
+<article data-pagefind-body class="h-entry post">
+  <div class="post-title flow">
+
+<div><span>
+
+    <a href="/categories/essay"><i class="fa-solid fa-tag"></i>  Essay </a>
+
+</span></div>
+
+
+    <h1 class="p-name">Add Information To Notion With Shortcuts</h1>
+ 
+<div class="datetime" style="font-size: 70%">
+    <i class="fa-regular fa-calendar"></i> 
+    <time datetime="2021-10-26 19:00:00 &#43;0000">26 Oct 2021</time>
+  </div>
+  </div>
+
+  <section class="e-content post-body">
+      <p>Without getting too much into the tools I use (yet again) I have been enjoying using <a href="https://notion.so/">Notion</a> lately for all of my productivity needs. It’s not perfect but the power and flexibility it offers me for free is pretty crazy. One of the downsides is using it on the go as the iOS apps leave a little to be desired, but seeing as my usage on mobile is limited now I built a shortcut to help out.</p><h2 id="the-set-up">The Set Up</h2><p>The Notion API has been around a little while but it’s very under utilised in my opinion. Given the fact Notion appeals to a wide rage of businesses and individuals alike it comes as no surprised that the API allows for quite a lot to be achieved without even opening the app. In order to get access to this you will need to visit their integrations page and set up you own access token.</p><p>1 – Whilst signed in to Notion, head to the <a href="https://www.notion.com/my-integrations">main page for setting up automation</a> and add a new integration with a name of your choice. Once set up you will need the API Key, so copy this somewhere safe. This allows limitless access to your Notion data (with a few bits of extra information needed) so please keep it safe!</p><p>2 -Second you will need the ID of the database you want to add information into, you can find this in the URL when the database is open as a page. This does not work with Linked Databases so make sure you have the original one open and copy the URL.</p><pre><code class="language-jsx">https://www.notion.so/{workspace_name}/{database_id}?v={view_id}
+</code></pre><p>If you have only one Workspace you wont have the Workspace name in your URL, so just copy everything after the Notion URL and before the question mark.</p><figure class="kg-card kg-image-card"><img src="uploads/2024/a19ce8904e.jpg" class="kg-image" alt loading="lazy" width="827" height="418" /></figure><p>While you have this page open share this database with your integration by clicking <strong><strong>‘Share’</strong></strong> then <strong><strong>‘Add people, emails, groups or integrations’</strong></strong> and selecting the integration you just set up. This gives the API full access to this database only. In my example below this is my ‘Inbox’ where everything goes first for me to sort out later on at my desk.</p><figure class="kg-card kg-image-card kg-width-wide"><img src="uploads/2024/5ed5c14b64.jpg" class="kg-image" alt loading="lazy" width="1536" height="596" /></figure><h2 id="the-shortcut">The Shortcut</h2><p>Download the Shortcut found <a href="https://www.icloud.com/shortcuts/a6cd20ece2324bdc9981eb266e8345d8">here</a>. Paste in the API Key when requested and secondly add in the Database ID. You can change these afterwards by editing the commented text boxes with the relevant data.</p><p>Once run, this simple set upasks you for a title and some content for the quick database entry you are making. This then puts the information into the below JSON format using the supplied variables. The real power of using the Notion API is the possibilities are huge. The API contains the ability to set up any number of blocks inside this page, rich text styling, adding images and loads more. You can find out more information in their <a href="https://developers.notion.com/docs/getting-started">extensive API documents</a>.</p><pre><code class="language-html">{
+    "parent": { "database_id": "{database ID￼}" },
+    "properties": {
+        "title": {
+      "title": [{ "type": "text", "text": { "content": "{page title}" } }]
+        }
+    },
+    "children": [
+    {
+      "object": "block",
+      "type": "paragraph",
+      "paragraph": {
+        "text": [{ "type": "text", "text": { "content": "{block content}" } }]
+      }
+    }
+  ]
+}
+</code></pre><p>I have set up a few of these to be able to add in items for my Todo list, blog post ideas and also clip web information for me to look at later on. I may look at creating something much bigger in future as my usage of Notion increases, it may never <a href="https://gr36.com/2021/05/15/my-obsidian-set/">pull me away from Obsidian</a> fully but it’s an amazing service none the less. If you create something I would love to see where you go with the Notion API and Shortcuts.</p>
+
+  </section>
+
+
+
+</article>
+<div class="post-meta">
+   <div><span>Reply via</span></div>
+<div class="sydication">
+
+    <div class="microblog">
+      <a class="u-syndication conversation-add-information-to-notion-with-shortcuts" href="https://micro.blog/gregmorris/"><i class="fa-brands fa-microblog"></i> Micro.blog</a>
+    </div>
+
+
+  
+
+  
+
+  
+
+<div class="email">
+  
+
+
+
+
+
+
+
+
+  
+
+
+
+  <a class="reply-by-email" href="/reply-by-email/" data-meta="46736254466c76526e706a667e176e487e5d71146963405d695e7d517d161d506e706a634717724d4549724e4067715e76626e486e706a666e706d537573764f6e706d537773114946176e507d7c765446161048694e6671465d715d6961115240634852464d715d6962405440634348694e667045631d5d40636a15406c6919"><i class="fa-solid fa-envelope"></i> Email</a>
+
+
+</div>
+</div>
+<a class="support" href="https://www.buymeacoffee.com/gregmorris">
+ Found this post usefull? Consider buying me a cofee
+    <i class="fa-solid fa-turn-up" aria-hidden="true"></i><i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+</a>
+</div>
+<div class="comments">
+  
+  <details id="leave-reply">
+    <summary>Leave A Reply Instead? <i class="fa-brands fa-microblog"></i><i class="fa-brands fa-bluesky" ></i><i class="fa-brands fa-mastodon"></i></summary>
+  </details>
+
+  
+  <details id="comments-section">
+    <summary id="comments-summary">Read Comments (0)</summary>
+    <div id="microblog-comments"></div>
+  </details>
+
+  
+  <script type="text/javascript" src="https://micro.blog/conversation.js?url=http%3a%2f%2flocalhost%3a1313%2f2021%2f10%2f26%2fadd-information-to.html"></script>
+</div>
+
+<script>
+  
+  document.addEventListener("DOMContentLoaded", function () {
+    const conversationContainer = document.querySelector(".microblog_conversation");
+
+    if (conversationContainer) {
+      
+      const comments = conversationContainer.querySelectorAll(".microblog_post");
+      const replyForm = conversationContainer.querySelector(".microblog_reply_form");
+
+      
+      const replyDetails = document.getElementById("leave-reply");
+      if (replyForm) replyDetails.appendChild(replyForm);
+
+      
+      const commentsDiv = document.getElementById("microblog-comments");
+      const commentsSection = document.getElementById("comments-section");
+      const commentsSummary = document.getElementById("comments-summary");
+      let commentCount = 0;
+
+      comments.forEach((comment) => {
+        commentsDiv.appendChild(comment);
+        commentCount++;
+      });
+
+      
+      commentsSummary.textContent = `Read Comments (${commentCount})`;
+
+      
+      if (commentCount === 0) {
+        commentsSection.style.display = "none";
+      }
+
+      
+      conversationContainer.remove();
+    }
+  });
+</script>
+
+
+
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI5KJI&placement=gregmorriscouk&format=cover" id="_carbonads_js"></script>
+
+
+
+<section id="footer">
+  Subscribe | 
+  <a href="/feed.xml">RSS</a> | 
+<a href="/feed.json">JSON</a> | 
+  <a href="https://www.buymeacoffee.com/gregmorris">Support me</a>
+  <div>❤️ made with love by me</div>
+</section>
+
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+{{ define "main" }}
+
+	<div class="gallery">
+
+	{{- $category := index .Site.Taxonomies.categories.photos -}}
+	{{- $list := $category.Pages -}}
+	{{- $len := (len $list) -}}
+	{{ range $index, $value := $list }}
+		{{- .Scratch.Set "include_photo" true -}}
+
+		{{- if and .Site.Params.photos_only_microblog (ne .Title "") -}}
+			{{- .Scratch.Set "include_photo" false -}}
+		{{- end -}}
+          
+		{{- if .Scratch.Get "include_photo" -}}
+			{{- if .Params.photos -}}
+				<a href="{{ .Permalink }}">
+					{{ range first 1 .Params.photos }}
+                               <img src="{{ . }}" loading="lazy">
+					{{ end }}
+				</a>
+			{{- end -}}
+		{{- end -}}
+	{{ end }}
+
+	</div>
+
+{{ end }}

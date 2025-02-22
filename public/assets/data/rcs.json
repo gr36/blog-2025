@@ -1,0 +1,134 @@
+{
+    "areas": [
+        {
+            "id": "01",
+            "title": "links",
+            "color": "blue"
+        },
+        {
+            "id": "02",
+            "title": "blogs",
+            "color": "purple"
+        },
+        {
+            "id": "02",
+            "title": "stuff",
+            "color": "green"
+        }
+    ],
+    "liked": {
+        "links": [
+            {
+                "title": "Does gear matter?",
+                "description": "These perennial questions in photography and other creative communities can whip people up into a frenzy.",
+                "url": "https://arun.is/blog/does-gear-matter/"
+            },
+            {
+                "title": "100 things you can do on your personal website",
+                "description": "When I have free time, I often find myself asking: what can I do with my website today?",
+                "url": "https://jamesg.blog/2024/02/19/personal-website-ideas/"
+            },
+            {
+                "title": "The internet used to be fun",
+                "description": "here’s a collection of articles that to some degree answer the question “Why have a personal website?”",
+                "url": "https://projects.kwon.nyc/internet-is-fun/"
+            },
+            {
+                "title": "Every Self-Help Book Ever, Boiled Down To 11 Simple Rules",
+                "description": "The basic advice in hundreds of bestsellers is older than you think.",
+                "url": "https://arne.me/articles/my-favorite-articles-of-2023"
+            },
+            {
+                "title": "RSS readers make me want to jump into a vat of acid!",
+                "description": "I have tried for a long, long, long, long, long, very long, long time to get behind RSS and I... Look, I just can't. I can't. I won't. I will not. I will not",
+                "url": "https://gkeenan.co/avgb/rss-readers-make-me-want-to-jump-into-a-vat-of-acid?ref=birchtree.me?ref=gr36.com"
+            },
+            {
+                "title": "What Makes Us Happy?",
+                "description": "For 72 years, researchers at Harvard have been examining this question",
+                "url": "https://www.theatlantic.com/magazine/archive/2009/06/what-makes-us-happy/307439/"
+            },
+            {
+                "title": "Multi-layered calendars",
+                "description": "To get a better grasp of this weird, intangible resource that governs everything around us, humanity has invented a variety of time devices.",
+                "url": "https://julian.digital/2023/07/06/multi-layered-calendars/"
+            }
+
+        ],
+        "blogs": [
+            {
+                "title": "Birchtree",
+                "description": "Writen by the awesome Matt Birchler, Birchtree covers technology in a way that is approchable and understandable.",
+                "url": "https://birchtree.me?ref=gr36.com"
+            },
+            {
+                "title": "The Dent",
+                "description": "Adys on again, off again blog is my go to place for gaming, technology and a down to earth take on eveything.",
+                "url": "https://thedent.net/?ref=gr36.com"
+            },
+            {
+                "title": "Robb Knight",
+                "description": "Robb is the inpiration for me building this blog with 11ty and writes excellent posts on a range of topics.",
+                "url": "https://rknight.me?ref=gr36.com"
+            },
+            {
+                "title": "Chris McLeod",
+                "description": "Chris is a software developer with over 20 years of work experience",
+                "url": "https://chrismcleod.dev?ref=gr36.com"
+            },
+            {
+                "title": "Jarrod Blundy",
+                "description": "Jarrod will forever be known as the Shortcuts guy, but don't hold that against him!",
+                "url": "https://heydingus.net?ref=gr36.com"
+            },
+            {
+                "title": "The Newsprint",
+                "description": "The Newsprint is written and produced by Josh Ginter, a regular contributer to The Sweet Setup",
+                "url": "https://thenewsprint.co/?ref=gr36.com"
+            },
+            {
+                "title": "Pixel Envy",
+                "description": "Assembled from bits daily by Nick Heer in Calgary and around the world.",
+                "url": "https://pxlnv.com/?ref=gr36.com"
+            },
+            {
+                "title": "Cory Dransfeldt",
+                "description": "Cory has a focus on development, technology, automation and the issues surrounded by them. ",
+                "url": "https://coryd.dev"
+            }
+        ],
+        "stuff": [
+            {
+                "title": "Tinylytics",
+                "description": "A joyful analytics tool for small websites, that's easy to use",
+                "url": "https://tinylytics.app"
+            },
+            {
+                "title": "11ty",
+                "description": "Eleventy, a simpler static site generator",
+                "url": "https://www.11ty.dev"
+            },
+            {
+                "title": "Scribbles",
+                "description": "Start your own blog in seconds, with a beautiful minimal theme and an amazing editor that doesn't get in your way.",
+                "url": "https://scribbles.page"
+            },
+            {
+                "title": "Quick Reviews",
+                "description": "Posting your reviews to social media never looked so good",
+                "url": "https://quickreviews.app"
+            },
+            {
+                "title": "Matter",
+                "description": "Matter pulls everything you want to read into one beautiful place.",
+                "url": "https://hq.getmatter.com"
+            },
+            {
+                "title": "omg.lol",
+                "description": "Get the best internet addressthat you’ve ever had",
+                "url": "https://home.omg.lol/referred-by/gr36"
+            }
+        ]
+    }
+}
+

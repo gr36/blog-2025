@@ -1,0 +1,22 @@
+{{ define "main" }}
+{{ $combinedPages := where .Site.RegularPages "Params.categories" "intersect" (slice "Essay" "Link") }}
+{{ $paginator := .Paginate $combinedPages 10 }}
+{{ $photos := where .Site.RegularPages "Params.categories" "intersect" (slice "Essay" "Link") }}
+
+{{ if eq $paginator.PageNumber 1 }}
+
+<section class="photos">
+    <div class="section_title">My Photos</div>
+    <div class="grid">
+    </div>
+</section>
+
+{{ end }}
+
+{{ partial "blog-list.html" . }}
+
+{{ $pag := $.Paginator }}
+
+{{ partial "pagination.html" . }}
+
+{{ end }}

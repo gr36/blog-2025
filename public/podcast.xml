@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:podcast="https://podcastindex.org/namespace/1.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+	<channel>
+		<atom:link href="http://localhost:1313/podcast.xml" rel="self" type="application/rss+xml" />
+		<title>Greg Morris</title>
+		<link>http://localhost:1313/</link>
+		<description>Product Designer | Pretend Photographer | Accessibility Advocate | Over-user of vertical bars </description>
+		<copyright>Copyright 2025 Greg Morris</copyright>
+		<itunes:image href="https://micro.blog/gregmorris/podcast.png" />
+		<itunes:category text="Society &amp; Culture">
+			<itunes:category text="Personal Journals"></itunes:category>
+		</itunes:category>
+		<itunes:author>Greg Morris</itunes:author>
+		<itunes:explicit>false</itunes:explicit>
+		<itunes:owner>
+			<itunes:name>Greg Morris</itunes:name>
+			<itunes:email></itunes:email>
+		</itunes:owner>
+		
+			<language>en</language>
+		
+		<lastBuildDate>Fri, 03 Jan 2025 12:17:31 +0000</lastBuildDate>
+	</channel>
+</rss>

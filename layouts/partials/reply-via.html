@@ -1,0 +1,38 @@
+<div><span>Reply via</span></div>
+<div class="sydication">
+<!--
+	<div  id="showForm">
+      <a href="#"><i class="fa-solid fa-comment"></i></a> Leave Reply</a>
+    </div>
+-->
+    <div class="microblog">
+      <a class="u-syndication conversation-{{ .Title | urlize }}" href="https://micro.blog/gregmorris/"><i class="fa-brands fa-microblog"></i> Micro.blog</a>
+    </div>
+
+
+  {{ if .Params.threads.url }}
+    <div class="threads">
+      <a class="u-syndication" {{ printf "href=%q" .Params.threads.url | safeHTMLAttr }}><i class="fa-brands fa-threads"></i> Threads</a>
+    </div>
+  {{ end }}
+
+  {{ if .Params.bluesky.link }}
+    <div class="bluesky">
+      <a class="u-syndication" {{ printf "href=%q" .Params.bluesky.link | safeHTMLAttr }}><i class="fa-brands fa-bluesky"></i> BlueSky</a>
+    </div>
+  {{ end }}
+
+  {{ if .Params.mastodon.id }}
+    <div class="mastodon">
+      <a class="u-syndication" href="https://{{ $.Params.mastodon.hostname }}/@{{ $.Params.mastodon.username }}/{{ .Params.mastodon.id }}"><i class="fa-brands fa-mastodon"></i> Mastodon</a>
+    </div>
+  {{ end }}
+
+<div class="email">
+  {{ partial "reply-by-email.html" . }}
+</div>
+</div>
+<a class="support" href="https://www.buymeacoffee.com/gregmorris">
+ Found this post usefull? Consider buying me a cofee
+    <i class="fa-solid fa-turn-up" aria-hidden="true"></i><i class="fa-solid fa-mug-hot" aria-hidden="true"></i>
+</a>

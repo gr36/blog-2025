@@ -1,0 +1,37 @@
+{{ define "main" }}
+<article data-pagefind-body class="h-entry post">
+  <div class="post-title flow">
+{{ if .Params.categories }}
+<div><span>
+{{ range .Params.categories }}
+    <a href="/categories/{{ . | urlize }}"><i class="fa-solid fa-tag"></i>  {{ . }} </a>
+{{ end }}
+</span></div>
+{{ end }}
+{{ with .Title }}
+    <h1 class="p-name">{{.}}</h1>
+ {{ end }}
+<div class="datetime" style="font-size: 70%">
+    <i class="fa-regular fa-calendar"></i> 
+    <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "02 Jan 2006" }}</time>
+  </div>
+  </div>
+
+  <section class="e-content post-body">
+      {{ .Content }}
+  </section>
+
+{{ if in .Params.categories "Guide" }}
+<div class="callout tip">
+    <h2>Did you get value from this?</h2>
+    Consider supporting me by chipping in for a coffee.
+    <a href="https://www.buymeacoffee.com/gregmorris">Buy Me A Coffee</a>
+</div>
+{{ end }}
+
+</article>
+{{ partial "post-meta.html" . }}
+
+<script async type="text/javascript" src="//cdn.carbonads.com/carbon.js?serve=CESI5KJI&placement=gregmorriscouk&format=cover" id="_carbonads_js"></script>
+
+{{ end }}

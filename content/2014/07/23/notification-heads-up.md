@@ -1,0 +1,27 @@
+---
+layout: post
+title: "Notification Heads Up! Cyanogen Uncover New Feature"
+microblog: false
+guid: http://greg-morris.micro.blog/2014/07/23/notification-heads-up.html
+post_id: 3988368
+date: 2014-07-23T00:00:00-0000
+lastmod: 2024-04-12T10:07:44-0000
+type: post
+categories:
+- "Essay"
+images:
+- https://greg-morris.micro.blog/uploads/2024/189573ff9c.jpg
+- https://greg-morris.micro.blog/uploads/2024/327d7a616e.jpg
+photos:
+- https://greg-morris.micro.blog/uploads/2024/189573ff9c.jpg
+- https://greg-morris.micro.blog/uploads/2024/327d7a616e.jpg
+photos_with_metadata:
+- url: https://greg-morris.micro.blog/uploads/2024/189573ff9c.jpg
+  width: 702
+  height: 702
+- url: https://greg-morris.micro.blog/uploads/2024/327d7a616e.jpg
+  width: 702
+  height: 702
+url: /2014/07/23/notification-heads-up.html
+---
+<p>We are now a mere day away from Google I/O, where Google is rumoured to be launching a new version of Android. What isn’t known is whether it will be Android 4.5 or 5.0. Not content with that Google have launched both 4.4.3 and 4.4.4 to AOSP and Nexus devices. However, a new threat has been discovered whilst digging around inside the fresh source code. <a href="https://github.com/android/platform_frameworks_base/blob/dbccd44a638ae8705a5b14bff8b2dd74abc26045/packages/SystemUI/src/com/android/systemui/statusbar/policy/HeadsUpNotificationView.java">Cyanogen team members have uncovered a new notification feature</a> called ‘Heads Up’. The CM team have managed to switch on the hidden code and implement it into their ROM.</p><p>This creates a notification similar to that implemented by the Paranoid Android Team with their ‘Hover’ feature. Created with immersive mode in mind, a notification does not disturb full screen activity. Instead creating a floating replication of the notification just below the status bar. These can be interacted with in the normal way, expanded or dismissed. All without having to leave your app or pull down the notification shade.</p><figure class="kg-card kg-image-card"><img src="uploads/2024/189573ff9c.jpg" class="kg-image" alt loading="lazy" width="702" height="702" /></figure><h2 id="notification-heads-up">Notification Heads Up</h2><p>Starting with the <a href="http://www.cyanogenmod.org/blog/last-week-in-cm-jun-19-2014">CM ‘nightly’ from June 21st onwards</a>, Heads Up will be available to use. CM has not only switched on the feature, but implemented it with the notifications, system wide. All with the level of expertise we have come to know from the team. If there are some notifications you just don’t want to see in heads up. There is an option to switch off certain apps from doing so. Leaving only the important ones to make a bigger, bolder entrance onto your screen.</p><p>Full of intrigue we have tested out the brand new notification Heads Up. Testing out the feature in the June 21st ‘nightly’ for the Nexus 5, Nexus 7 and even the <a href="http://techdissected.com/editorials-and-discussions/two-weeks-with-the-htc-one-m8/">HTC One M8</a>. There are a few teething issues, but other than small issues, this works exactly as you would expect. You can interact with a notification in all ways you would expect. Tap to launch the app, swipe away or even use embedded interaction options. It has already proven to be useful in the short time testing. So much so that CM11 has now become my rom of choice.</p><figure class="kg-card kg-image-card"><img src="uploads/2024/327d7a616e.jpg" class="kg-image" alt loading="lazy" width="702" height="702" /></figure><p>We can only speculate if these are meant to be used in the next version of android, or maybe never due to be used in android. They bear more than a passing resemblance to iOS notifications. With iOS8 to get interactive notifications, maybe this is an area Google will be pushing forward. Ready to stay one step ahead of iOS.</p><h2 id="don%E2%80%99t-want-to-flash">Don’t Want To Flash?</h2><p>Don’t worry if you don’t want to flash CM for the notification features. <a href="http://forum.xda-developers.com/xposed/modules/mod-heads-notifications-t2791217">MohammedAG over on XDA Developers</a> has ported the feature over to Xposed. Joining such modules as <a href="http://techdissected.com/google/gravity-box-the-all-in-one-xposed-framework-module/">gravity box</a>, it offers custom rom like features to an otherwise stock rom. However you will have to root. In the interests of science we tried this on other roms and it works great on AOSP based roms. On non AOSP such as HTC Sense it does work very well. But misses some notifications. Remeber this is only v.1 of the notification enhancement so I am sure it will improve.</p><p>We are going to see an action packed I/O this year. <a href="http://techdissected.com/google/lg-g-watch-and-android-wear-what-do-we-know/">Android Wear and the LG G Watch</a>, <a href="http://techdissected.com/google/android/google-fit-to-be-released-at-google-io/">Google fit</a>, <a href="http://techdissected.com/google/android-tv-report-says-its-set-to-launch-at-io-2014/">Android TV</a> and what else. Maybe a new tablet with a new version of android? Maybe Android Silver? The Keynote starts at 9am PDT on June 25th. With the key note and <a href="https://play.google.com/store/apps/details?id=com.google.samples.apps.iosched">several sessions streamed online</a> for those that are unable attend. In 2014 everything leaks! Somehow Google always manage to surprise us with something, what would you like to see?</p>

@@ -1,0 +1,25 @@
+---
+layout: post
+title: "The iPad In 2018"
+microblog: false
+guid: http://greg-morris.micro.blog/2018/02/19/the-ipad-in.html
+post_id: 3987870
+date: 2018-02-19T11:23:00-0000
+lastmod: 2018-02-19T11:23:00-0000
+type: post
+categories:
+- "Essay"
+url: /2018/02/19/the-ipad-in.html
+---
+<!--kg-card-begin: html--><p>I am now a little over 3 years with the iPad as my computer and nothing much has really changed. I wrote about one year of using the <a href="https://gr36.com/2017-02-19-one-year-ipad-computer/">iPad Pro as my computer</a> last year but I started with an iPad Air 2 in 2015. Don’t get me wrong, the power of the iPad has improved, the level of apps has taken a huge leap forward and even the OS is easier to use – but in reality things are pretty much as they were.</p>
+<p>There is no shortage of articles proposing inprovements that Apple need to make to improve the iPad. Federico Viticci is one of my inspirations for using the iPad and he is no stranger to mocking up <a href="https://www.macstories.net/stories/ios-11-ipad-wishes-and-concept-video/">videos and making a wish list for iPad</a> improvements. Yet I find myself in a pretty happy place for my usage, writing and being productive is a breeze on iOS. Most of the improvements requested are for small use cases and perhaps this is the point where the changes plateau or Apple chooses to make <a href="https://forums.macrumors.com/threads/ios-12-home-screen-changes-pushed-to-2019.2103616/">drastic changes to the UI</a>.</p>
+<blockquote><p>as great as iOS10 is there are still holes in Apples OS. Thankfully most of these are filled by the rich app ecosystem</p></blockquote>
+<p>With the release of iOS11 Apple made an initially confusing but revolutionary change to multi tasking, resulting in much easier interaction. The “holes” that were in iOS10 have mostly been filled by either Apple or applications – and in this third party echo system the real strides are being made. Professional applications are arriving in the iPad all the time, amazingly capable applications such as <a href="https://itunes.apple.com/gb/app/affinity-photo/id1117941080?mt=8&amp;at=1000ltj4">Affinity Photo</a> and <a href="https://itunes.apple.com/gb/app/working-copy/id896694807?mt=8&amp;at=100ltj4">Working Copy</a>prove the real strength of the platform.</p>
+<p>If rumours are to be believed development looks set to become easier with the introduction of a <a href="https://arstechnica.com/gadgets/2017/12/apple-has-a-plan-for-universal-apps-across-ios-and-macos-report-says/">shared development platform with project Marzipan</a>. This could, as many have pointed out, lead to macOS being inundated with Instagram and Facebook. Yet could just as well lead to powerful Mac apps appearing on iPad. Unfortunately there are downsides, and you can be assured that Adobe won’t conform to a sandbox environment.</p>
+<h2>Accessories Made For A Pro</h2>
+<p>Adoption of the iPad as a computer is due to many reasons – but they revolve around the powerful hardware, amazing battery life and the ecosystems surrounding it. Despite Apple producing a Pencil and a Smart Keyboard, the innovation has stalled. There are very few accessories that make use of the smart connector featured on the iPad Pro, and third party alternatives are often severely <a href="https://www.google.co.uk/search?client=safari&amp;hl=en-gb&amp;ei=Xq6KWofNHIS9gAbQiLG4Dg&amp;q=brydge+keyboard+issues&amp;oq=brydge+keyboard+issues&amp;gs_l=mobile-gws-serp.3..0.16214.17708.0.17816.9.9.0.4.4.0.152.869.1j6.7.0....0...1c..64.mobile-gws-serp..2.7.525...0i67k1.152.zSrde3Yxc_U">lacking in quality</a>.</p>
+<p>In order to push the iPad Pro into other areas, would further development of accessories be required? The hardware is hugely powerful, yet restricted to typing on a keyboard or writing on the screen. Many people have mused about an iOS laptop – this would be pretty easy to achieve with an open ecosystem. Could Apple allow companies to build a dock for iPad usage on a bigger screen? Could Apple allow interaction with a mouse?</p>
+<p>They certainly could do lots of things, but would this provide many more sales of devices? The real progress is to be made in applications, not changing the interaction paradigm completely. When Apple featured the phrase “what’s a computer” in <a href="https://youtu.be/sQB2NjhJHvY">their advert</a> they really meant it. There are so many people now using mobile first devices that the traditional computing interface is becoming less and less relevant. There are still things that are far easier to use a keyboard and mouse for, but these things are decreasing all the time.</p>
+<p>Leaning the iPad back to a desktop computing model serves no purpose other than complicating matters. The iPad in 2018 should continue down the path it already sets out, the future of computing is coming into sight in a mobile device world. I am amazingly happy with everything the iPad can do for me – long may it continue.</p>
+<p><!--kg-card-end: html--></p>
+<!--kg-card-end: html-->

@@ -1,0 +1,18 @@
+ {{ $podcasts := getJSON "https://ayapodcast.com/feed.json" }}
+
+<div class="divider"><h3 class="divider_title">Podcasts</h3>
+<span class="divider_bar"></div>
+</div>
+<div id="podcast_carousel" class="podcast_carousel">
+
+{{ range first 3 $podcasts.items }}
+
+<div class="card press">
+	<a href="{{ .url }}" target="_blank">
+              <strong>{{ .title }}</strong>
+              <div class="content">{{ .content_html | plainify | truncate 140 }}</div>
+              <div class="listen">Listen now <i class="fa-solid fa-arrow-right"></i></a></div>
+</div>
+{{ end }}
+<a class="view_all" href="https://ayapodcast.com/">View All</a>
+</div>

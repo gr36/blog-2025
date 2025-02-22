@@ -1,0 +1,21 @@
+---
+layout: post
+microblog: true
+guid: http://greg-morris.micro.blog/2022/09/20/i-think-he.html
+post_id: 4054647
+date: 2022-09-20T17:29:07-0000
+lastmod: 2024-06-22T16:19:16-0000
+type: post
+images:
+- uploads/2022/a533801bd7.jpg
+photos:
+- uploads/2022/a533801bd7.jpg
+photos_with_metadata:
+- url: uploads/2022/a533801bd7.jpg
+  width: 337
+  height: 600
+url: /2022/09/20/i-think-he.html
+---
+I think he wants one
+
+<img src="uploads/2022/a533801bd7.jpg" width="337" height="600" alt="" />

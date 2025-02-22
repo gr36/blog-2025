@@ -1,0 +1,20 @@
+{{ $combinedPages := where .Site.RegularPages "Params.categories" "intersect" (slice "Essay" "Link") }}
+{{ $paginator := .Paginate $combinedPages 10 }}
+
+<section class="blog-posts">
+    <ul class="post-list">
+    
+    {{ if or .IsHome .Site.Params.paginate_categories }}
+        {{ $list := $paginator.Pages }}
+        {{ range $list  }}
+            {{ partial "post-item.html" . }}
+        {{ end }}
+    {{ else }}
+        {{ $list := where .Site.Pages.ByDate.Reverse "Type" "post" }}
+        {{ range $list  }}
+            {{ partial "post-item.html" . }}
+        {{ end }}
+    {{ end }}
+    
+    </ul>
+    </section>

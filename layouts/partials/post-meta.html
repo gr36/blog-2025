@@ -1,0 +1,58 @@
+<div class="post-meta">
+   {{ partial "reply-via.html" . }}
+</div>
+<div class="comments">
+  <!-- Leave A Reply section -->
+  <details id="leave-reply">
+    <summary>Leave A Reply Instead? <i class="fa-brands fa-microblog"></i><i class="fa-brands fa-bluesky" ></i><i class="fa-brands fa-mastodon"></i></summary>
+  </details>
+
+  <!-- Comments Section in a Collapsible <details> -->
+  <details id="comments-section">
+    <summary id="comments-summary">Read Comments (0)</summary>
+    <div id="microblog-comments"></div>
+  </details>
+
+  <!-- Load Micro.blog Script -->
+  <script type="text/javascript" src="https://micro.blog/conversation.js?url={{ .Permalink }}"></script>
+</div>
+
+<script>
+  // Wait for the Micro.blog script to load and render its content
+  document.addEventListener("DOMContentLoaded", function () {
+    const conversationContainer = document.querySelector(".microblog_conversation");
+
+    if (conversationContainer) {
+      // Extract all posts (comments)
+      const comments = conversationContainer.querySelectorAll(".microblog_post");
+      const replyForm = conversationContainer.querySelector(".microblog_reply_form");
+
+      // Move the reply form to the top (inside <details>)
+      const replyDetails = document.getElementById("leave-reply");
+      if (replyForm) replyDetails.appendChild(replyForm);
+
+      // Move comments to #microblog-comments and update count
+      const commentsDiv = document.getElementById("microblog-comments");
+      const commentsSection = document.getElementById("comments-section");
+      const commentsSummary = document.getElementById("comments-summary");
+      let commentCount = 0;
+
+      comments.forEach((comment) => {
+        commentsDiv.appendChild(comment);
+        commentCount++;
+      });
+
+      // Update the comments summary with the count
+      commentsSummary.textContent = `Read Comments (${commentCount})`;
+
+      // If no comments, hide the comments section
+      if (commentCount === 0) {
+        commentsSection.style.display = "none";
+      }
+
+      // Remove the original container to clean up
+      conversationContainer.remove();
+    }
+  });
+</script>
+

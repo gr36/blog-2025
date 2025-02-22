@@ -1,0 +1,14 @@
+---
+layout: post
+title: "What Is A Smartphone For?"
+microblog: false
+guid: http://greg-morris.micro.blog/2021/12/26/what-is-a.html
+post_id: 3988289
+date: 2021-12-26T12:27:45-0000
+lastmod: 2021-12-26T12:27:45-0000
+type: post
+categories:
+- "Essay"
+url: /2021/12/26/what-is-a.html
+---
+<p>Some would say we have an unhealthy relationship with our phones. That for many it is a digital attachment to our hands, ever present in a world that increasingly encourages it. Others would argue it’s a revolution, allowing us to be more connected to each other and have more information at our fingertips than ever before. We all sit somewhere on the spectrum between those two extremes, but I find it essential to try to establish where you are, and where you want to be.</p><p>Personally, I have a weird relationship with mine. I don’t like to <a href="https://gregmorris.co.uk/blog/i-dont-use-my-phone-much/">use it much</a>, but I am stuck in a world, a job, and an interest group that needs one. Having come to the realisation that I <a href="https://gregmorris.co.uk/blog/i-cant-go/">can’t get rid of it</a>, I like to push it to the extremity. Or at least that is the story I like to tell myself.</p><p>I don’t like to use my phone, but I do. Going through periods of addiction, then realisation, before I return to sporadic use. The reasons for this are varied. I am unquestionably being manipulated by the apps and services I use, but all of this <a href="https://gregmorris.co.uk/blog/its-not-the/">lays at my door</a>. The reality is that I love using my phone, it allows me to interact with more people, get more stuff done and generally be more social than I would be in person. However, using it makes me a worse person. I don’t sleep as much, I am distracted, and I hate what <a href="https://gregmorris.co.uk/blog/needing-feedback/">it does to my brain</a>. So, I ask myself this question, often whist staring at the slab of metal and glass in my hand. What is my smartphone for?</p><p>What does it achieve? Which tasks couldn’t be achieved without it? What can I do easier? There are numerous answers to these questions, but focusing on them is important. Using the tool for the purpose you bought it for in the first place and not sliding down the hole is all about self-control. Being able to know what job your phone <em>is</em> doing, and what it is doing <em>to</em> you.</p><p>Everyone’s answer to those questions will be different. I need my phone to keep in contact with people I don’t see in person. For taking photos of my kids to save. To share my thoughts and ideas with the world. I don’t need it for scrolling through Reddit at 2am. Or for tweeting random stuff instead of interacting with people that are around me. However, for others this will be different, and some of those things will be true, but knowing this is half the battle.</p>

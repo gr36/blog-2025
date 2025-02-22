@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Conspiracy Theory To Fill The Gaps"
+microblog: false
+guid: http://greg-morris.micro.blog/2021/12/16/conspiracy-theory-to.html
+post_id: 3988284
+date: 2021-12-16T12:54:04-0000
+lastmod: 2021-12-16T12:54:04-0000
+type: post
+categories:
+- "Essay"
+url: /2021/12/16/conspiracy-theory-to.html
+---
+<p>There is a theological perspective called “<a href="https://en.wikipedia.org/wiki/God_of_the_gaps">god of the gaps</a>”. This idea is that whenever humans are exposed to something they don’t understand, they fill it with a notion that they have already accepted. At many times in history, that was with gods and mythology. As so, all the gaps humans had in their knowledge were explained away easily.</p><p>This is not to say <em>the</em> god, but <em>a</em> god was always responsible for everything that appeared outside our control. In more modern times the gaps that we didn’t understand, the stars, the tides, the very makeup of our being all being explained by science. Which can be a belief system in itself, but as great as science is, it doesn’t replace everything. Unfortunately, these gaps that still exist, even when sometimes explanations <em>are</em> available, are being replaced by conspiracy theory.</p><p>While gaps in scientific knowledge are <a href="https://biologos.org/common-questions/are-gaps-in-scientific-knowledge-evidence-for-god/">certainly still being used</a> to justify a belief system, when it comes to gaps linked to more social problems, the gaps is often filled with ‘alternative theory’. That’s not to say that some conspiracy theories don’t eventually come to have merit — perhaps this is why they have become so attractive to those seeking to understand things that can’t be explained away. This of course is part of the issue.</p><p>I love to understand as much as I can. Yet at some point I have to realise that I cannot become an expert on everything and put trust in people that do. After studying scientific method, but not being a scientist, for numerous years, I like to rely on my hidden bullshit detector. So, I use both my knowledge and a high level of suspicion to fill the gaps in my knowledge whenever I come up against them. Without letting one source tell me the way, more taking a broad overview of information and letting it point the rough direction.</p><p>Although, for some. A similar approach may be true. However, with their underlying desire for everything to be explained, and all responsibility removed, leads to belief in stories. We can blame social media for increasing it (undoubtably true) but the thirst to understand is one we all share. Which makes these beliefs somewhat understandable as away to bring understanding to an ever-changing and impossible to understand world, now my worry is that <a href="https://gregmorris.co.uk/blog/are-we-addicted/">we are addicted to it</a>.</p>

@@ -1,0 +1,163 @@
+@import "reset.css";
+
+@font-face {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    src: url('/assets/fonts/Atkinson-Hyperlegible-Regular-102.woff') format('woff'),
+    url('/assets/fonts/Atkinson-Hyperlegible-Regular-102a.woff2') format('woff2');
+    }
+    
+    @font-face {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    src: url("/assets/fonts/Atkinson-Hyperlegible-Bold-102a.woff2") format('woff2'),
+    url('/assets/fonts/Atkinson-Hyperlegible-Bold-102.woff') format('woff');
+    font-weight: bold;
+    }
+    
+    @font-face {
+    font-family: 'Atkinson Hyperlegible', sans-serif;
+    src: url('/assets/fonts/Atkinson-Hyperlegible-Italic-102a.woff2') format('woff2'),
+    url('/assets/fonts/Atkinson-Hyperlegible-Italic-102.woff') format('woff');
+    font-style: italic;
+    }
+
+:root { 
+    /* Colours */
+    --max-width: 1000px;
+    --main-color: #EF775E;
+    --background: color(display-p3 0.929412 0.92549 0.898039/1);
+    --contrast: color(display-p3 0.15 0.14 0.15);
+    
+    /* Fonts */
+    /* --text-color: color(display-p3 0.956863 0.952941 0.937255 / 1); */
+    --font: 'Atkinson Hyperlegible', sans-serif;
+    --step--2: clamp(0.7813rem, 0.7747rem + 0.0326vw, 0.8rem);
+    --step--1: clamp(0.9375rem, 0.9158rem + 0.1087vw, 1rem);
+    --step-0: clamp(1.125rem, 1.0815rem + 0.2174vw, 1.25rem);
+    --step-1: clamp(1.35rem, 1.2761rem + 0.3696vw, 1.5625rem);
+    --step-2: clamp(1.62rem, 1.5041rem + 0.5793vw, 1.9531rem);
+    --step-3: clamp(1.944rem, 1.771rem + 0.8651vw, 2.4414rem);
+    --step-4: clamp(2.3328rem, 2.0827rem + 1.2504vw, 3.0518rem);
+    --step-5: clamp(2.7994rem, 2.4462rem + 1.7658vw, 3.8147rem);
+    
+    /* Spacing */
+    --space-2xs: clamp(0.375rem,0.3414rem + 0.1678vi,0.5rem);
+    --space-xs: clamp(0.5625rem,0.5122rem + 0.2517vi,0.75rem);
+    --space-s: clamp(0.75rem,0.6829rem + 0.3356vi,1rem);
+    --space-m: clamp(1.125rem,1.0243rem + 0.5034vi,1.5rem);
+    --space-l: clamp(1.5rem,1.3658rem + 0.6711vi,2rem);
+    --space-xl: clamp(1.875rem,1.7072rem + 0.8389vi,2.5rem);
+    --space-2xl: clamp(3rem,2.7315rem + 1.3423vi,4rem);
+    --space-3xl: clamp(3.75rem,3.4144rem + 1.6779vi,5rem);
+    --space-4xl: clamp(5.625rem,5.1216rem + 2.5168vi,7.5rem);
+
+    --border: 1px solid black;
+    }
+
+.flow > * + * {margin-block-start: var(--flow-space,1rem);}
+
+p {margin-block-start: var(--space-s);}
+
+.padded {padding: var(--gutter, var(--space-s));}
+
+.grid {
+display: grid;
+grid-template-columns: repeat(
+var(--grid-placement, auto-fill),
+minmax(var(--grid-min-item-size, 16rem), 1fr)
+);
+gap: var(--gutter, var(--space-s));
+}
+
+.flex {display: flex;gap: var(--gutter, var(--space-s));}
+
+body {
+font-family: var(--font);
+font-size: var(--step-0);
+color: var(--text-color);
+margin: 3rem auto;
+text-rendering: optimizeLegibility;
+background-color: var(--background);
+line-height: 1.5;
+text-align: justify;
+text-justify: inter-word;
+max-width: var(--max-width);
+}
+
+.header {
+max-width: 80%;
+margin-block-end: var(--space-m);
+--flow-space: var(--space-xs);
+svg {
+width: 100%;
+height: auto;
+}
+span {
+color: var(--main-color);
+font-weight: bold;
+}
+.subtitle {
+font-size: var(--step-1);
+}
+.follow_links >*:hover {
+color: var(--main-color);
+transform: scale(1.1);
+}
+.repel {
+justify-content: space-between;
+text-align: left;
+
+}
+}
+
+nav {
+margin: var(--space-xs) 0;
+li {
+list-style-type: none;
+display: inline-block;
+border: var(--border);
+padding: var(--space-2xs);
+box-sizing : content-box;
+margin-inline-end: var(--space-2xs);
+margin-block-end: var(--space-m);
+&:hover {
+box-shadow: inset 0 -2px 0 var(--main-color);
+}
+}
+.active {
+border-bottom: 2px solid var(--main-color);
+-webkit-background-clip: padding-box;
+background-clip: padding-box;
+
+}
+}
+
+.section_title {
+    font-size: var(--step-4);
+}
+
+
+@media only screen and (max-width: 1000px) {
+    body {
+        margin: var(--space-l);
+    }
+}
+
+
+@media only screen and (max-width: 480px) {
+   .repel {
+    flex-direction: column;
+    gap: 0;
+   }
+
+}
+
+@media only screen and (max-width: 768px) {
+    .header {
+        --flow-space: var(--space-2xs);
+        max-width: 100%;
+        .subtitle {
+            font-size: var(--step-0);
+        }
+    }
+
+}

@@ -1,0 +1,13 @@
+{{ define "main" }}
+<article data-pagefind-body class="h-entry" id="post">
+  {{ with .Title }}
+  <div class="post-title">
+    <h1 class="p-name">{{.}}</h1>
+  </div>
+  {{ end }}
+  <section class="e-content post-body">
+      {{ .Content }}
+  </section>
+</article>
+<div class="datetime"><i class="fa-regular fa-calendar"></i> <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "3:04 PM, Jan 2" }}</time></div>
+{{ end }}
