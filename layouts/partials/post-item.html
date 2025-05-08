@@ -5,9 +5,12 @@
     {{ end }}
   </div>
   <section class="e-content post-body">
-      {{ .Content }}
+    {{ .Summary }}
   </section>
   <div class="post_meta">
+    {{ if .Truncated}}
+      <a href="{{ .RelPermalink }}">Read more...</a>
+    {{ end }}
     <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}"><i class="fa-regular fa-calendar"></i>  {{ .Date.Format "02 Jan 2006" }}</time>
     {{ if .Params.categories }}
     <div>

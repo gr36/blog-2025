@@ -1,21 +1,21 @@
 {{ define "main" }}
 <article class="h-entry post">
-	{{ with .Title }}
-  <div class="post-title">
-    <h1 class="p-name">{{ .Title }}</h1>
-  </div>
-    {{ end }}
-  <div>
-	Replying to: <img src="{{ .Params.reply_to_avatar }}" width="22" height="22" style="width: 22px; height: 22px; vertical-align: top; border-radius: 11px; padding: 0px;" alt="{{ .Params.reply_to_username }}" />
-	{{ if eq .Params.reply_to_hostname "micro.blog" }}
-		<a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a>
-	{{ else }}
-		<a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a>
-	{{ end }}
-  </div>
-  <section class="e-content post-body">
-      {{ .Content }}
-  </section>
-  <div class="datetime"><i class="fa-regular fa-calendar"></i> <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "3:04 PM, Jan 2" }}</time></div>
+{{ with .Title }}
+<div class="post-title">
+<h1 class="p-name">{{ . }}</h1>
+</div>
+{{ end }}
+<div>
+Replying to: <img src="{{ .Params.reply_to_avatar }}" width="22" height="22" style="width: 22px; height: 22px; vertical-align: top; border-radius: 11px; padding: 0px;" alt="{{ .Params.reply_to_username }}" />
+{{ if eq .Params.reply_to_hostname "micro.blog" }}
+<a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">@{{ .Params.reply_to_username }}</a>
+{{ else }}
+<a href="{{ .Params.reply_to_url }}" class="u-in-reply-to">{{ .Params.reply_to_hostname }}</a>
+{{ end }}
+</div>
+<section class="e-content post-body">
+{{ .Content }}
+</section>
+<div class="datetime"><i class="fa-regular fa-calendar"></i> <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}">{{ .Date.Format "3:04 PM, Jan 2" }}</time></div>
 </article>
 {{ end }}
