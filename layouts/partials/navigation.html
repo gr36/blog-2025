@@ -1,12 +1,12 @@
-<nav>
+<nav role="navigation" aria-label="Main navigation">
     <ul>
         <li {{ if eq .Page.RelPermalink "/" }} class="active" {{ end }}>
-            <a href="/">Home</a>
+            <a href="/" aria-current="{{ if eq .Page.RelPermalink "/" }}page{{ end }}">Home</a>
         </li>
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
         <li {{ if $currentPage.IsMenuCurrent "main" . }} class="active" {{ end }}>
-            <a href="{{ .URL }}">{{ .Name }}</a>
+            <a href="{{ .URL }}" aria-current="{{ if $currentPage.IsMenuCurrent "main" . }}page{{ end }}">{{ .Name }}</a>
         </li>
         {{ end }}
     </ul>
