@@ -12,17 +12,19 @@
     {{ end }}
   </section>
   <div class="post_meta">
-    {{ if and (not (in .Params.categories "Link")) .Truncated }}
-      <a href="{{ .RelPermalink }}">Read more...</a>
+    {{ if not .Truncated }}
+      <a href="{{ .RelPermalink }}" class="boxed"><i class="fa-solid fa-link"></i> Permalink</a>
+    {{ else }}
+      <a href="{{ .RelPermalink }}" class="boxed"><i class="fa-solid fa-glasses"></i> Read Post</a>
     {{ end }}
-    <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}"><i class="fa-regular fa-calendar"></i>  {{ .Date.Format "02 Jan 2006" }}</time>
     {{ if .Params.categories }}
     <div>
     {{ range .Params.categories }}
-      <a href="/categories/{{ . | urlize }}"><i class="fa-solid fa-tag"></i>  {{ . }} </a>
+      <a href="/categories/{{ . | urlize }}" class="boxed"><i class="fa-solid fa-tag"></i>  {{ . }} </a>
     {{ end }}
     </div>
     {{ end }}
+    <time class="boxed" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}"><i class="fa-regular fa-calendar"></i>  {{ .Date.Format "02 Jan 2006" }}</time>
   </div>
 </li>
 

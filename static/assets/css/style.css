@@ -177,13 +177,10 @@ nav {
         --padding: var(--space-2xs) var(--space-m);
         list-style: none;
         transition: all 0.2s ease;
-        &.active {
+        &.active, &:hover {
+            background-color: var(--main-color);
+            color: var(--background);
             --border: var(--main-color);
-            color: var(--main-color);
-        }
-        &:hover {
-            --border: var(--main-color);
-            color: var(--main-color);
         }
     }
 }
@@ -228,21 +225,17 @@ nav {
     align-items: center;
 
     > * {
-        border: 1px solid var(--border-color);
-        padding: var(--space-2xs) var(--space-xs);
+        --padding: var(--space-xs) var(--space-m);
         display: inline-flex;
         align-items: center;
         gap: var(--space-2xs);
         transition: all 0.2s ease;
     }
 
-    i {
-        color: var(--text-muted);
-    }
-
     a:hover {
-        color: var(--main-color);
-        border-color: var(--main-color);
+        background-color: var(--main-color);
+        color: var(--background);
+        --border: var(--main-color);
     }
 }
 
@@ -560,10 +553,7 @@ details {
     padding: var(--space-m);
     background: var(--contrast);
     transition: transform 0.2s ease;
-    
-    &:hover {
-        transform: translateY(-2px);
-    }
+
     
     .post-title {
         margin-bottom: var(--space-s);
