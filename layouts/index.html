@@ -4,19 +4,20 @@
 {{ $photos := where .Site.RegularPages "Params.categories" "intersect" (slice "Essay" "Link") }}
 
 {{ if eq $paginator.PageNumber 1 }}
-
-<section class="photos">
-    <div class="section_title">My Photos</div>
-    <div class="grid">
-    </div>
-</section>
-
+{{ partial "about-me.html" . }}
+{{ partial "photos.html" . }}
 {{ end }}
 
-{{ partial "blog-list.html" . }}
-
-{{ $pag := $.Paginator }}
-
-{{ partial "pagination.html" . }}
+<section class="blog-section">
+    {{ if eq $paginator.PageNumber 1 }}
+    <div class="section-header">
+        <h2>Latest Writing</h2>
+        <p class="section-description">Thoughts on design, photography, and technology</p>
+    </div>
+    {{ end }}
+    {{ partial "blog-list.html" . }}
+    {{ $pag := $.Paginator }}
+    {{ partial "pagination.html" . }}
+</section>
 
 {{ end }}
