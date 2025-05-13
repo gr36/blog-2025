@@ -4,22 +4,21 @@
         <p class="section-description">A selection of my latest photography work</p>
     </div>
     <div class="grid">
-        {{ $photos := .Site.Taxonomies.categories.photos }}
-        {{ range first 6 $photos }}
-            {{ with .Params.images }}
-            {{ range first 1 . }}
-            <a href="{{ $.RelPermalink }}" class="photo-item">
-                <img src="{{ . }}" alt="Preview from {{ $.Title }}" loading="lazy" />
-                <div class="photo-overlay">
-                    <span class="photo-title">{{ $.Title }}</span>
-                    <time datetime="{{ $.Date.Format "2006-01-02" }}">{{ $.Date.Format "January 2, 2006" }}</time>
-                </div>
-            </a>
-            {{ end }}
-            {{ end }}
+        {{ range first 6 .Site.Taxonomies.categories.photos }}
+            {{- if .Params.photos -}}
+                <a href="{{ .Permalink }}" class="photo-item">
+                    {{ range first 1 .Params.photos }}
+                        <img src="{{ . }}" loading="lazy" alt="Preview photo">
+                    {{ end }}
+                    <div class="photo-overlay">
+                        <span class="photo-title">{{ .Title }}</span>
+                        <time datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Format "January 2, 2006" }}</time>
+                    </div>
+                </a>
+            {{- end -}}
         {{ end }}
     </div>
     <div class="section-footer">
-        <a href="/categories/photo" class="view-all">View all photos <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="/photos" class="view-all">View all photos <i class="fa-solid fa-arrow-right"></i></a>
     </div>
 </section>
