@@ -2,11 +2,11 @@
   {{ if .Params.categories }}
   <div>
   {{ range .Params.categories }}
-    <a href="/categories/{{ . | urlize }}"><i class="fa-solid fa-tag"></i>  {{ . }} </a>
+    <a class="boxed" href="/categories/{{ . | urlize }}"><i class="fa-solid fa-tag"></i>  {{ . }} </a>
   {{ end }}
   </div>
   {{ end }}
-  <time datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}"><i class="fa-regular fa-calendar"></i>  {{ .Date.Format "02 Jan 2006" }}</time>
+  <time class="boxed" datetime="{{ .Date.Format "2006-01-02 15:04:05 -0700" }}"><i class="fa-regular fa-calendar"></i>  {{ .Date.Format "02 Jan 2006" }}</time>
 </div>
 
 {{ partial "reply-via.html" . }}

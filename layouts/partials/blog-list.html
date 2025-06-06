@@ -1,7 +1,7 @@
 {{ $combinedPages := where .Site.RegularPages "Params.categories" "intersect" (slice "Essay" "Link") }}
 {{ $paginator := .Paginate $combinedPages 10 }}
 
-<section class="blog-posts">
+<section class="blog-posts" id="blog-posts">
     <ul class="post-list flow">
     
     {{ if or .IsHome .Site.Params.paginate_categories }}

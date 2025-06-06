@@ -23,7 +23,7 @@
 :root { 
     /* Colours */
     --max-width: 1000px;
-    --main-color: #EF775E;
+    --main-color: #ffd23e;
     --background: #f2f0eb;
     --contrast: color(display-p3 0.956863 0.952941 0.937255/1);
     --text-muted: #666;
@@ -87,7 +87,7 @@ gap: var(--gutter, var(--space-s));
     border: 1px solid var(--border, var(--border-color));
     padding: var(--padding, var(--space-2xs));
     box-sizing : content-box;
-    border-radius: 8px;
+    border-radius: 4px;
 }
 
 .highlight {color: var(--main-color);font-weight: bold;}
@@ -126,20 +126,6 @@ iframe {
 }
 
 .header {
-    margin-bottom: var(--space-between);
-    
-    svg {
-        width: 100%;
-        max-width: 420px;
-        height: auto;
-        margin-bottom: var(--space-m);
-    }
-
-    .subtitle {
-        font-size: var(--step-1);
-        color: var(--text-muted);
-        letter-spacing: -0.01em;
-    }
 
     .follow_links {
         gap: var(--space-m);
@@ -161,32 +147,46 @@ iframe {
     }
 }
 
+/* Simple Piccalilli-style Navigation */
 nav {
-    margin: var(--space-between) 0;
+    margin: var(--space-l) 0;
     
     ul {
         display: flex;
         flex-wrap: wrap;
-        gap: var(--space-s);
+        gap: var(--space-m);
         align-items: center;
         margin: 0;
         padding: 0;
     }
     
     li {
-        --padding: var(--space-2xs) var(--space-m);
         list-style: none;
-        transition: all 0.2s ease;
-        &.active, &:hover {
-            background-color: var(--main-color);
-            color: var(--background);
-            --border: var(--main-color);
+        
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: var(--step-1);
+            box-shadow: none !important;
+            
+            &:hover {
+                text-decoration: underline;
+                text-decoration-thickness: 2px;
+                text-underline-offset: 4px;
+            }
+        }
+        
+        &.active a {
+            text-decoration: underline;
+            text-decoration-thickness: 2px;
+            text-underline-offset: 4px;
         }
     }
 }
 
 .post {
-    margin-bottom: var(--space-between);
+    /* margin-bottom: var(--space-between); */
 }
 
 .post-title {
@@ -201,16 +201,17 @@ nav {
 
 .post-body {
     font-size: var(--step-0);
+    margin: var(--space-m) 0;
+   
     
     a, a:visited {
         text-decoration: underline;
         text-decoration-color: var(--text-muted);
-        text-decoration-thickness: .1ex;
+        text-decoration-thickness: .2ex;
         text-underline-offset: .3ex;
         transition: all 0.2s ease;
         
         &:hover {
-            color: var(--main-color);
             text-decoration-color: var(--main-color);
         }
     }
@@ -223,6 +224,8 @@ nav {
     flex-wrap: wrap;
     gap: var(--space-2xs);
     align-items: center;
+    
+    
 
     > * {
         --padding: var(--space-xs) var(--space-m);
@@ -234,7 +237,6 @@ nav {
 
     a:hover {
         background-color: var(--main-color);
-        color: var(--background);
         --border: var(--main-color);
     }
 }
@@ -272,7 +274,16 @@ span.separator:last-child {
     }
     
     nav {
-        margin: var(--space-xl) 0;
+        margin: var(--space-l) 0;
+        
+        ul {
+            justify-content: center;
+            gap: var(--space-s);
+        }
+        
+        li a {
+            font-size: var(--step--1);
+        }
     }
     
     .post-title h1 {
@@ -358,6 +369,7 @@ blockquote {
         
         > div {
             border: 1px solid var(--border-color);
+            border-radius: 4px;
             padding: var(--space-2xs) var(--space-xs);
             transition: all 0.2s ease;
             background: var(--background);
@@ -443,28 +455,108 @@ details {
     margin-top: var(--space-2xl);
 }
 
-.about-me {
-    margin: var(--space-between) 0;
-    padding: var(--space-m);
-    background: var(--contrast);
+/* Hero Section - Piccalilli inspired */
+.hero-section {
+    background: var(--main-color); /* Bold yellow background */
+    color: #333;
+    margin: var(--space-l) calc(-1 * var(--space-m)); /* Extend to screen edges */
+    padding: var(--space-2xl) var(--space-m);
+    position: relative;
     
-    .about-content {
+    .hero-content {
         max-width: var(--max-width);
         margin: 0 auto;
     }
     
-    .about-grid {
+    .hero-grid {
         display: grid;
-        grid-template-columns: auto 1fr;
-        gap: var(--space-l);
-        align-items: flex-start;
+        grid-template-columns: 2fr 1fr;
+        gap: var(--space-2xl);
+        align-items: center;
+        margin-bottom: var(--space-xl);
     }
     
-    .about-photo {
-        width: 112px;
-        height: 112px;
+    .hero-title {
+        font-size: var(--step-5);
+        font-weight: 900;
+        line-height: 1.1;
+        margin: 0 0 var(--space-l) 0;
+        color: #333;
+        letter-spacing: -0.02em;
+    }
+    
+    .hero-description {
+        font-size: var(--step-1);
+        line-height: 1.5;
+        margin: 0 0 var(--space-l) 0;
+        color: #333;
+        max-width: 42ch;
+    }
+    
+    .hero-link {
+        color: #333;
+        font-weight: bold;
+        text-decoration: underline;
+        text-decoration-thickness: 2px;
+        text-underline-offset: 2px;
+        
+        &:hover {
+            text-decoration-color: transparent;
+            background: #333;
+            color: #ffd23e;
+            padding: 2px 4px;
+            border-radius: 2px;
+        }
+    }
+    
+    .hero-cta {
+        display: flex;
+        gap: var(--space-s);
+        flex-wrap: wrap;
+    }
+    
+    .cta-button {
+        display: inline-flex;
+        align-items: center;
+        padding: var(--space-s) var(--space-m);
+        background: #333;
+        color: #ffd23e;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+        border: 2px solid #333;
+        
+        &:hover {
+            background: transparent;
+            color: #333;
+            transform: translateY(-2px);
+        }
+        
+        &.cta-secondary {
+            background: transparent;
+            color: #333;
+            
+            &:hover {
+                background: #333;
+                color: #ffd23e;
+            }
+        }
+    }
+    
+    .hero-aside {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: var(--space-m);
+    }
+    
+    .hero-photo {
+        width: 140px;
+        height: 140px;
         border-radius: 50%;
         overflow: hidden;
+        border: 4px solid #333;
         
         img {
             width: 100%;
@@ -473,56 +565,95 @@ details {
         }
     }
     
-    h2 {
-        font-size: var(--step-2);
-        margin: 0 0 var(--space-2xs) 0;
-        color: var(--text-color);
-    }
-    
-    p {
-        margin: 0;
-        color: var(--text-muted);
-        line-height: 1.6;
+    .hero-tagline {
+        text-align: center;
         font-size: var(--step-0);
+        color: #333;
+        max-width: 30ch;
+        
+        em {
+            font-style: italic;
+            font-weight: 500;
+        }
     }
     
     .social-links {
         display: flex;
+        justify-content: center;
         gap: var(--space-s);
-        margin: var(--space-s) 0 0 0;
+        margin-top: var(--space-s);
         
         a {
-            color: var(--text-muted);
+            color: #333;
             font-size: var(--step-0);
-            transition: color 0.2s ease;
+            transition: all 0.2s ease;
             
             &:hover {
-                color: var(--main-color);
+                transform: translateY(-3px);
+                color: #333;
             }
         }
     }
 }
 
 @media only screen and (max-width: 768px) {
-    .about-me {
-        padding: var(--space-m);
+    .hero-section {
+        padding: var(--space-xl) var(--space-s);
         
-        .about-grid {
+        .hero-grid {
             grid-template-columns: 1fr;
+            gap: var(--space-l);
             text-align: center;
-            gap: var(--space-m);
         }
         
-        .about-photo {
-            margin: 0 auto;
+        .hero-text {
+            text-align: center;
         }
         
-        .social-links {
+        .hero-title {
+            font-size: var(--step-4);
+            text-align: center;
+        }
+        
+        .hero-description {
+            max-width: none;
+            text-align: center;
+        }
+        
+        .hero-cta {
             justify-content: center;
         }
         
-        h2 {
-            font-size: var(--step-1);
+        .hero-aside {
+            order: -1;
+        }
+        
+        .cta-button {
+            padding: var(--space-2xs) var(--space-s);
+            font-size: var(--step--1);
+        }
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .hero-section {
+        .hero-title {
+            font-size: var(--step-3);
+        }
+        
+        .hero-cta {
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        .cta-button {
+            width: 100%;
+            max-width: 200px;
+            justify-content: center;
+        }
+        
+        .social-links {
+            gap: var(--space-s);
         }
     }
 }
@@ -549,28 +680,27 @@ details {
 }
 
 .post {
-    margin-bottom: var(--space-xl);
-    padding: var(--space-m);
-    background: var(--contrast);
+    /* margin-bottom: var(--space-xl); */
+    /* padding: var(--space-m) 0; */
     transition: transform 0.2s ease;
+    
+    
 
     
     .post-title {
         margin-bottom: var(--space-s);
         
         h1 {
-            font-size: var(--step-2);
-            line-height: 1.2;
+            font-size: var(--step-4);
+            line-height: 1.6;
             margin: 0;
+            background: var(--main-color);
+            padding: var(--space-xs) var(--space-m);
         }
         
         a {
             color: var(--text-color);
             text-decoration: none;
-            
-            &:hover {
-                color: var(--main-color);
-            }
         }
     }
 }
