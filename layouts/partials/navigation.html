@@ -1,5 +1,11 @@
-<nav role="navigation" aria-label="Main navigation">
-    <ul>
+<nav role="navigation" aria-label="Main navigation" class="main-nav">
+    <!-- Mobile menu button -->
+    <button class="mobile-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+    </button>
+    
+    <!-- Navigation menu -->
+    <ul class="nav-menu">
         <li{{ if eq .Page.RelPermalink "/" }} class="active"{{ end }}>
             <a href="/" aria-current="{{ if eq .Page.RelPermalink "/" }}page{{ end }}">Home</a>
         </li>
@@ -11,3 +17,34 @@
         {{ end }}
     </ul>
 </nav>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+    
+    if (mobileMenuToggle && navMenu) {
+        mobileMenuToggle.addEventListener('click', function() {
+            const isExpanded = this.getAttribute('aria-expanded') === 'true';
+            
+            // Toggle aria-expanded
+            this.setAttribute('aria-expanded', !isExpanded);
+            
+            // Toggle menu visibility
+            navMenu.classList.toggle('nav-menu-open');
+            
+            // Toggle hamburger animation
+            this.classList.toggle('mobile-menu-toggle-open');
+        });
+        
+        // Close menu when clicking on a link (useful for single-page apps)
+        navMenu.addEventListener('click', function(e) {
+            if (e.target.tagName === 'A') {
+                navMenu.classList.remove('nav-menu-open');
+                mobileMenuToggle.classList.remove('mobile-menu-toggle-open');
+                mobileMenuToggle.setAttribute('aria-expanded', 'false');
+            }
+        });
+    }
+});
+</script>
